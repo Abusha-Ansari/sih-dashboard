@@ -20,6 +20,7 @@ DASHBOARD_HTML = Path("dashboard.html")
 
 async def run_scraper():
     print(f"[1/3] Navigating to {URL} with Playwright...")
+    scraped_fresh_html = False
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(
@@ -32,33 +33,39 @@ async def run_scraper():
         try:
             response = await page.goto(URL, wait_until="domcontentloaded", timeout=90000)
             if not response or response.status != 200:
-                print(f"[ERROR] HTTP status {response.status if response else 'None'}")
-                return False
-
-            await page.wait_for_timeout(3000)
-
-            print("[2/3] Expanding DataTable to show all entries...")
-            await page.evaluate("""() => {
-                if (window.jQuery && window.jQuery.fn.dataTable && window.jQuery('#dataTablePS').length) {
-                    try {
-                        window.jQuery('#dataTablePS').DataTable().page.len(-1).draw();
-                    } catch (e) {
-                        console.error('DataTable len error', e);
-                    }
-                }
-            }""")
-            await page.wait_for_timeout(3000)
-
-            html = await page.content()
-            if html.strip():
-                OUTPUT_HTML.write_text(html, encoding="utf-8")
-                print(f"[OK] Saved HTML ({len(html):,} bytes) to {OUTPUT_HTML.resolve()}")
+                print(f"[WARN] HTTP status {response.status if response else 'None'}; using last saved HTML snapshot if available.")
             else:
-                print("[ERROR] Empty HTML received.")
-                return False
+                await page.wait_for_timeout(3000)
+
+                print("[2/3] Expanding DataTable to show all entries...")
+                await page.evaluate("""() => {
+                    if (window.jQuery && window.jQuery.fn.dataTable && window.jQuery('#dataTablePS').length) {
+                        try {
+                            window.jQuery('#dataTablePS').DataTable().page.len(-1).draw();
+                        } catch (e) {
+                            console.error('DataTable len error', e);
+                        }
+                    }
+                }""")
+                await page.wait_for_timeout(3000)
+
+                html = await page.content()
+                if html.strip():
+                    OUTPUT_HTML.write_text(html, encoding="utf-8")
+                    scraped_fresh_html = True
+                    print(f"[OK] Saved HTML ({len(html):,} bytes) to {OUTPUT_HTML.resolve()}")
+                else:
+                    print("[WARN] Empty HTML received; using last saved HTML snapshot if available.")
 
         finally:
             await browser.close()
+
+    if not OUTPUT_HTML.exists() or not OUTPUT_HTML.read_text(encoding="utf-8").strip():
+        print("[ERROR] No usable HTML snapshot is available to parse.")
+        return False
+
+    if not scraped_fresh_html:
+        print(f"[INFO] Continuing with cached HTML snapshot: {OUTPUT_HTML.resolve()}")
 
     print("[3/3] Parsing HTML into JSON and updating dashboards...")
     data = parse_html_to_json(html_path=OUTPUT_HTML)
