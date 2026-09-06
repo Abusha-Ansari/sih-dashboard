@@ -1,5 +1,7 @@
 {
   "cleanUrls": true,
+  "buildCommand": null,
+  "outputDirectory": ".",
   "headers": [
     {
       "source": "/sih2026_data.json",

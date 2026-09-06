@@ -1,0 +1,7 @@
+# Tell Vercel to ignore Python backend scripts and only serve the static site
+scraper.py
+parse_sih.py
+run_pipeline.py
+requirements.txt
+.github
+sih2026PS.html
