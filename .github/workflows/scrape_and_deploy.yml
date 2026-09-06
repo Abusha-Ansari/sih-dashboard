@@ -2,9 +2,9 @@ name: SIH Scraper & Auto-Sync
 
 on:
   schedule:
-    # Runs automatically every hour (or adjust as needed)
-    - cron: '0 * * * *'
-  workflow_dispatch: # Allows manual run anytime from GitHub UI
+    # Runs automatically every 10 minutes 24/7
+    - cron: '*/10 * * * *'
+  workflow_dispatch: # Allows manual run anytime from GitHub Actions tab
   push:
     branches:
       - main
