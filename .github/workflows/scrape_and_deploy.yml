@@ -30,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -r .github/requirements.txt
           playwright install chromium --with-deps
 
       - name: Run Scraping & Data Extraction Pipeline
