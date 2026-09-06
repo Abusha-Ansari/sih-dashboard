@@ -1,0 +1,3528 @@
+<!DOCTYPE html><html><head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <meta name="description" content="">
+        <meta name="csrf-token" content="9li6p60h6pEEZCt11MDOyqhQ7ZJy4CJIWP4Wt0cr">
+        <meta name="author" content="">
+        <title>Smart India Hackathon</title>
+        <link rel="icon" href="/img/favicon-sih.png" type="image/png" sizes="16x16">
+        <!-- CSS-->
+               
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
+        
+        <link href="/css/mobile-menu.css" rel="stylesheet" type="text/css">
+        <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+        <!-- <link href="/css/bootstrap-select.css" rel="stylesheet" type="text/css"> -->
+        <link href="/css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link href="/css/slick-test.css" rel="stylesheet" type="text/css">
+        <link href="/css/style_new_test.css" rel="stylesheet" type="text/css">
+        <link href="/css/responsiveTest.css" rel="stylesheet" type="text/css">
+        <!-- <link href="/css/animate.css" rel="stylesheet" type="text/css"> -->
+        <link href="/css/bs_leftnavi.css" rel="stylesheet" type="text/css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">       
+        <!-- JS-->
+        <script src="/lib/jquery-3.0.0.min.js" type="text/javascript"></script>
+        <!-- <link href="/dataTable/css/jquery.dataTables.css" rel="stylesheet" />
+        <script src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script> -->
+        <!-- <script src="/lib/bootstrap-3.3.7/js/bootstrap.min.js" type="text/javascript"></script> -->
+        <script type="text/javascript" src=" /js/typeahead.js"></script>  
+        <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+          <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-2SFBJN4W5W"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-2SFBJN4W5W');
+        </script>		
+
+         </head>
+<body>
+  <div class="d-none d-sm-block">
+    <div class="header bg-light py-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-md-4 col-lg-6">
+            <nav class=""><a class="navbar-brand" href="https://sih.gov.in/"><span><img src="/img1/SIH2026-logo.png" class="img-responsive"></span></a></nav>
+          </div>
+          <div class="col-6 col-md-8 col-lg-6 text-right">
+            <nav class="navbar navbar-expand-md topNavbar">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link alumniButTop" href="https://alumni.mic.gov.in/" target="_blank">MIC Alumni</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link alumniButTop alumnilogin" href="/signin" style="padding:0px 15px 4px 15px !important;display: flex;justify-content: center;align-items: center;">
+                    SIH Login 
+                    <img style="height:25px;width:25px;margin: 6px 0px 0 5px;border-radius: 25px;" src="/img1/login.png" alt=""></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+			  </div>
+		  </div>
+	  </div>
+        
+   <nav class="navbar navbar-expand-lg" id="main_navbar">
+    <div class="mx-auto d-flex" id="hamburger-outer">
+      <a class="navbar-brand sihlogo" href="#"><img src="/img1/SIH-Logo.png" alt="image"></a>
+            <button id="hamburger-menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://sih.gov.in">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            About SIH
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <!-- <li class="nav-item dropdown">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        SIH 2024
+                                    </a>
+                                    <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdown1">
+                                        <li><a class="dropdown-item" href="/sih2024">About SIH</a></li>
+                                        <li><a class="dropdown-item" href="/sih2024#sih-process-flow">SIH Process Flow</a></li>
+                                        <li><a class="dropdown-item" href="/SIH_Themes">SIH Themes</a></li> 
+                                        <li><a class="dropdown-item" href="/implementationTeam">Implementation Team</a></li>                                                 
+                                    </ul>
+                                </li> -->
+                                <!-- <li><a class="dropdown-item" href="/sih2024">About SIH</a></li> -->
+                                <li><a class="dropdown-item" href="/#process-timeline">SIH Process Flow</a></li>
+                                <li><a class="dropdown-item" href="/#sihthemes">SIH Themes</a></li>
+                                <li><a class="dropdown-item" href="/implementationTeam">Implementation Team</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-item dropdown-toggle pastedition" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        SIH Past Editions
+                                    </a>
+                                    <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdown1">
+                                        <li><a class="dropdown-item" href="/sih2017">SIH 2017</a></li>
+                                        <li><a class="dropdown-item" href="/sih2018Software">SIH 2018 Software</a></li>
+                                        <li><a class="dropdown-item" href="/sih2018Hardware">SIH 2018 Hardware</a></li> 
+                                        <li><a class="dropdown-item" href="/sih2019">SIH 2019 Software</a></li> 
+                                        <li><a class="dropdown-item" href="/sih2019Hard">SIH 2019 Hardware</a></li> 
+                                        <li><a class="dropdown-item" href="/sih2020Software">SIH 2020 Software</a></li>
+                                        <li><a class="dropdown-item" href="/sih2020Hardware">SIH 2020 Hardware</a></li>
+                                        <li><a class="dropdown-item" href="/sih2022s">SIH 2022</a></li>
+                                        <li><a class="dropdown-item" href="/sih2023s">SIH 2023</a></li>
+                                        <li><a class="dropdown-item" href="/sih2024">SIH 2024</a></li>
+                                        <li><a class="dropdown-item" href="/sih2025">SIH 2025</a></li>          
+                                    </ul>
+                                </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Guidelines
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <!-- <li><a class="dropdown-item" href="/letters/2026/SIH2026-Guidelines-College-SPOC-updated.pdf" target="_blank">For Institutes/Universities</a></li> -->
+                          <li><a class="dropdown-item" href="/letters/2026/SIH 2026 Guidelines.pdf" target="_blank">For Institutes/Universities</a></li>
+                          <li><a class="dropdown-item" href="/letters/2026/SIH2026-IDEA-Presentation-Format.pptx" target="_blank">Idea PPT</a></li>
+                          <!-- <li><a class="dropdown-item" href="/letters/Internal-Hackathon-Process-flow-chart-final.png" target="_blank">Internal Hackathon Process</a></li> -->
+                          <!-- <li><a class="dropdown-item" href="/letters/SIH-Process-flow-chart-final.pdf" target="_blank">Hackathon Timeline</a></li> -->
+                          <!-- <li><a class="dropdown-item" href="/letters/nc_internal_hackathon_guidelines.zip">NC Internal Hackathon Guidelines</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="/sih2026PS">Problem Statements</a> -->
+                         <a class="nav-link" href="/sih2026PS">Problem Statements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/know-your-spoc">Know Your SPOC</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projectImplementation">Project Implementation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/faqs">FAQs</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            FAQs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="/faqs#college-spoc">For Institutes/Universities SPOC</a></li>
+                          <li><a class="dropdown-item" href="/faqs#team">For Team</a></li>
+                        </ul>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contactUs">Contact us</a>
+                    </li> 
+                    
+                    <li class="nav-item-mobile" id="scrollnav">
+                      <a class="nav-link-mobile onScrollButton" href="/signin" style="">
+                        SIH Login <img src="/img1/login.png" alt=""> 
+                      </a>
+                    </li>
+
+
+
+                </ul>
+            </div>
+    </div>
+        
+    </nav>
+</div>
+<!-- Desktop Menu End  -->
+
+<!-- Mobile Menu Start  -->
+<div class="d-block d-sm-none">
+<header class="nav-top">
+	<a class="navbar-brand" href="https://www.sih.gov.in/"><span><img src="/img1/SIH-Logo.png" class="img-responsive"></span></a>
+	<span class="hamburger material-icons" id="ham">menu</span>
+</header>
+
+<nav class="nav-drill">
+  <ul class="nav-items nav-level-1">
+    <li class="nav-item-mobile nav-expand">
+			<a class="nav-link-mobile nav-expand-link" href="#">
+				About SIH
+			</a>
+			<ul class="nav-items nav-expand-content"><li class="nav-link-mobile">
+	<a class="nav-link-mobile nav-back-link" href="#">
+		Back
+	</a>
+</li>
+				<!-- <li class="nav-item-mobile nav-expand">
+					<a class="nav-link-mobile nav-expand-link" href="#">
+						SIH 2024
+					</a>
+        </li> -->
+        <li class="nav-item-mobile">
+            <a class="nav-link-mobile" href="/#process-timeline">
+                SIH Process Flow
+            </a>
+          </li>
+          <li class="nav-item-mobile">
+            
+            <a class="nav-link-mobile" href="/#sihthemes">
+                SIH Themes
+            </a>
+          </li>
+          <!-- <li class="nav-item-mobile">
+            <a class="nav-link-mobile" href="https://sih.gov.in/sih2024PS">
+                Problem Statements
+            </a>
+          </li> -->
+          <li class="nav-item-mobile">
+            <a class="nav-link-mobile" href="https://sih.gov.in/know-your-spoc">
+                Know your SPOC
+            </a>
+          </li>
+
+        <!-- <li>
+					<ul class="nav-items nav-expand-content">
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/sih2024">
+								 About SIH
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/sih2024#sih-process-flow">
+								 SIH Process Flow
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							
+							<a class="nav-link-mobile" href="https://sih.gov.in/SIH_Themes">
+								 SIH Themes
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+              <a class="nav-link-mobile" href="https://sih.gov.in/sih2024PS">
+								 Problem Statements
+							</a>
+						</li>
+					</ul>
+				</li> -->
+				<li class="nav-item-mobile nav-expand">
+					<a class="nav-link-mobile nav-expand-link" href="#">
+						Past Editions
+					</a>
+					<ul class="nav-items nav-expand-content"><li class="nav-link-mobile">
+	<a class="nav-link-mobile nav-back-link" href="#">
+		Back
+	</a>
+</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/sih2017">
+								  SIH 2017
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/sih2018Software">
+								  SIH 2018 Software
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/sih2018Hardware">
+								 SIH 2018 Hardware
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/sih2019">
+								  SIH 2019 Software
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/sih2019Hard">
+								  SIH 2019 Hardware
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/sih2020Software">
+								  SIH 2020 Software
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/sih2020Hardware">
+								  SIH 2020 Hardware
+							</a>
+						</li>
+            <li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/sih2022s">
+								  SIH 2022
+							</a>
+						</li>
+            <li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/sih2023s">
+								  SIH 2023
+							</a>
+						</li>
+            <li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/sih2024">
+								  SIH 2024
+							</a>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</li>  
+    <li class="nav-item-mobile nav-expand">
+			<a class="nav-link-mobile nav-expand-link" href="#">
+				Guidelines
+			</a>
+      
+			<ul class="nav-items nav-expand-content"><li class="nav-link-mobile">
+	<a class="nav-link-mobile nav-back-link" href="#">
+		Back
+	</a>
+</li>
+					
+            <li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="/letters/Guidelines-how-to-apply-college.pdf">
+                How to apply as Institute SPOC
+							</a>
+						</li>
+            <li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="/letters/SIH2025-Guidelines-College-SPOC-updated.pdf">
+                Guidelines for Institutes/Universities
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="/letters/SIH2025-IDEA-Presentation-Format.pptx">
+								 Idea Presentation template PPT
+							</a>
+						</li>						
+            <!-- <a class="nav-link-mobile" href="/letters/nc_internal_hackathon_guidelines.zip">
+                  Internal Hackathon
+            </a> -->
+								
+			</ul>
+		</li>
+    <li class="nav-item-mobile">
+			<a class="nav-link-mobile" href="https://sih.gov.in/sih2026PS">
+				Problem Statements
+			</a>
+		</li> 
+    <li class="nav-item-mobile">
+			<a class="nav-link-mobile" href="https://sih.gov.in/know-your-spoc">
+				Know your SPOC
+			</a>
+		</li>
+    <li class="nav-item-mobile">
+			<a class="nav-link-mobile" href="https://sih.gov.in/projectImplementation">
+				Project Implementation
+			</a>
+		</li>
+    <li class="nav-item-mobile">
+			<a class="nav-link-mobile" href="https://sih.gov.in/faqs">
+				FAQs
+			</a>
+		</li>
+    <!-- <li class="nav-item-mobile nav-expand">
+					<a class="nav-link-mobile nav-expand-link" href="#">
+						FAQs
+					</a>
+					<ul class="nav-items nav-expand-content">
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/faqs#college-spoc">
+								   For Institute SPOC
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/faqs#team">
+								   For Team
+							</a>
+						</li>
+					</ul>
+			</li> -->
+
+    <li class="nav-item-mobile">
+			<a class="nav-link-mobile" href="https://sih.gov.in/contactUs">
+				Contact us
+			</a>
+		</li>
+		
+    <!-- <li class="nav-item-mobile nav-expand">
+			<a class="nav-link-mobile nav-expand-link" href="#">
+				Support
+			</a>
+			<ul class="nav-items nav-expand-content">
+				<li class="nav-item-mobile nav-expand">
+					<a class="nav-link-mobile nav-expand-link" href="#">
+						FAQs
+					</a>
+					<ul class="nav-items nav-expand-content">
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/faqs#college-spoc">
+								   For Institute SPOC
+							</a>
+						</li>
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/faqs#team">
+								   For Team
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item-mobile nav-expand">
+					<a class="nav-link-mobile nav-expand-link" href="#">
+						Reach Us
+					</a>
+					<ul class="nav-items nav-expand-content">
+						<li class="nav-item-mobile">
+							<a class="nav-link-mobile" href="https://sih.gov.in/contactUs">
+								    Contact us
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</li> -->
+
+		<li class="nav-item-mobile">
+			<a class="nav-link-mobile" href="/signin">
+				<img src="/img1/login.png" alt=""> Login/Register 
+			</a>
+		</li>
+  </ul>
+
+</nav>
+</div>
+
+
+        
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+<div id="demo" class="carousel slide" data-ride="carousel"> 
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="img-fluid" src="img/problem-statement-bg.png" alt="Slide One" style="height: 260px;object-fit: cover;"> 
+      <div class="carousel-caption">
+        <h3 class="prob-statement">Problem Statements</h3>
+        <!-- <p class="contact-us-para">Solutions</p> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--<section class="psBox1">
+    <div class="container">
+        <div class="row">
+				<div class="col-md-12">
+					<h2>PROBLEM STATEMENTS</h2>
+				</div>
+        </div>
+    </div>
+</section> -->
+
+<section class="total-statement totstat">
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="statement-box">
+                    <div class="row">
+                        <div class="col-md-6 d-flex justify-content-center align-item-center">
+                            <div class="outer-total-statements">
+                                <h3>Total Statements</h3>
+                                <p>As per available data</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="row mb-5">
+                                <div class="col-md-6">
+                                    <div class="hard">
+                                        <h3>57</h3>
+                                        <p>Hardware</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="soft">
+                                        <h3>176</h3>
+                                        <p>Software</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                 <div class="col-md-12 text-center">
+                                    <div class="box-of-bharat">
+                                        <p>Swadeshi for Atmanirbhar Bharat</p>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                             <div class="row mt-3">
+                                    <div class="col-md-6">
+                                        <div class="hard">
+                                            <h3>57</h3>
+                                            <p>Hardware</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="soft">
+                                            <h3>176</h3>
+                                            <p>Software</p>
+                                        </div>
+                                    </div>
+                            </div>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="statement-box">
+                    <div class="row">
+                        <div class="col-md-4 d-flex justify-content-center align-item-center">
+                            <div class="outer-total-statements">
+                                <h3>Total Problem Statements</h3>
+                                <!-- <p>As per available data</p> -->
+                            </div>
+                        </div>
+                        <div class="col-md-2 pt-5">
+                                <div class="hard" style="background-image:none;">
+                                    <h3 style="margin-bottom: 8px;">57</h3>
+                                    <p style="font-weight:700;font-size:25px">Hardware</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 pt-5">
+                                <div class="soft" style="background-image:none;">
+                                    <h3 style="margin-bottom: 8px;">176</h3>
+                                    <p style="font-weight:700;font-size:25px">Software</p>
+                                </div>
+                            </div>
+                                <div class="col-md-4 text-center">
+                                    <!-- <div class="box-of-bharat" style="visibility:hidden">
+                                        <p>Swadeshi for Atmanirbhar Bharat</p>
+                                    </div> -->
+                                    <div class="row">
+                                         <div class="col-md-6 pt-5">
+                                            <div class="hard">
+                                                <h3 style="margin-bottom: 8px;">17</h3>
+                                                <p style="font-weight:700;font-size:25px"><a href="/#sihthemes">Hardware Themes</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 pt-5">
+                                            <div class="soft">
+                                                <h3 style="margin-bottom: 8px;">17</h3>
+                                                <p style="font-weight:700;font-size:25px"><a href="/#sihthemes">Software Themes</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                           
+                           
+                        </div>
+                    </div>
+                 </div>
+            </div>
+    </div>
+
+		
+</section>
+
+
+<section class="prob-statement-panel">
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-md-12">
+                <a class="viewButton downloadViewButton" href="/letters/SIH_PS_2024.xlsx" download>Download Problem Statements</a>
+            </div>
+        </div> -->
+        
+   
+    
+    
+    <div class="container wrapper">
+                               
+   
+                              
+  
+  <div id="dataTablePS_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="dataTablePS_length"><label>Show <select name="dataTablePS_length" aria-controls="dataTablePS" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="dataTablePS_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTablePS"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="dataTablePS" class="table table-striped table-bordered dataTable no-footer" style="width:100%" role="grid">
+    <thead>
+    <tr id="ps-2024" role="row"><th style="vertical-align: middle; width: 33.2px;" class="sorting_asc" tabindex="0" aria-controls="dataTablePS" rowspan="1" colspan="1" aria-sort="ascending" aria-label="S.No.: activate to sort column descending">S.No.</th><th style="vertical-align: middle; width: 141.2px;" class="sorting" tabindex="0" aria-controls="dataTablePS" rowspan="1" colspan="1" aria-label="Organization: activate to sort column ascending">Organization</th><th style="vertical-align: middle; width: 355.2px;" class="sorting" tabindex="0" aria-controls="dataTablePS" rowspan="1" colspan="1" aria-label="Problem Statement Title: activate to sort column ascending">Problem Statement Title</th><th style="vertical-align: middle; width: 66.2px;" class="sorting" tabindex="0" aria-controls="dataTablePS" rowspan="1" colspan="1" aria-label="Category: activate to sort column ascending">Category</th><th style="vertical-align: middle; width: 66.2px;" class="sorting" tabindex="0" aria-controls="dataTablePS" rowspan="1" colspan="1" aria-label="PS Number: activate to sort column ascending">PS Number</th><th style="vertical-align: middle; width: 76.2px;" class="sorting" tabindex="0" aria-controls="dataTablePS" rowspan="1" colspan="1" aria-label="Submitted Idea(s) Count: activate to sort column ascending">Submitted Idea(s) Count</th><th style="vertical-align: middle; width: 108.2px;" class="sorting" tabindex="0" aria-controls="dataTablePS" rowspan="1" colspan="1" aria-label="Theme: activate to sort column ascending">Theme</th><th style="vertical-align: middle; width: 84px;" class="sorting" tabindex="0" aria-controls="dataTablePS" rowspan="1" colspan="1" aria-label="Deadline for Idea Submission: activate to sort column ascending">Deadline for Idea Submission</th></tr>
+    </thead>
+    <tbody>
+
+
+
+        
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+
+
+        
+
+    
+    <tr role="row" class="odd">
+             <td class="colomn_border sorting_1">1</td>
+<!--<td></td>-->
+
+
+        <td class="colomn_border">Ministry of Development of North Eastern Region (MDoNER)</td>
+        <td class="colomn_border"><a style="font-size:15px ;margin-bottom: 4px !important; cursor: pointer" data-toggle="modal" data-target="#ViewProblemStatement26001">AI-Based early warning and landslide Risk Monitoring System in NER</a>
+            <div id="ViewProblemStatement26001" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Modal content-->
+             <div class="modal-content">
+                <div class="modal-header">                    
+                    <button type="button" class="close PSclose" data-dismiss="modal">×</button>                    
+					<div class="row">
+						<div class="col-md-6">
+							<div class="psLogoModal">
+								<img class="navbar-brand" src="/img1/SIH-Logo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="psTitleModalTop">
+								<h6 class="modal-title"> Problem Statement Details  </h6>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-body">
+                   
+                    <table id="settings" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement ID</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> 26001</div>
+                               </td>
+                            </tr>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement Title</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> AI-Based early warning and landslide Risk Monitoring System in NER</div>
+                               </td>
+                            </tr>
+                            <tr>
+                            <th style="vertical-align: top;">Description</th>
+                            <td>
+                                <!-- <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> &lt;b&gt;Background:&lt;/b&gt;&lt;br&gt;&lt;br&gt; The North Eastern Region (NER) frequently faces landslides, flash floods, road blockages, and slope failures due to heavy rainfall, fragile terrain, and unplanned hill cutting. These incidents often disrupt connectivity, damage infrastructure, delay emergency response, and isolate remote villages for days. Currently, monitoring of vulnerable zones is mostly reactive and dependent on manual reporting. There is limited use of real-time predictive systems for identifying high-risk zones and issuing early warnings to authorities and local communities. With increasing climate vulnerability in the region, there is a need for an AI-enabled real-time monitoring and prediction system that can help authorities take preventive action before disasters occur.&lt;br&gt;&lt;br&gt; &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;&lt;br&gt; This problem statement proposes the development of an Al-powered early warning and monitoring platform capable of predicting and tracking landslide-prone areas in real time across the North Eastern Region. The solution should:&lt;br&gt;&lt;br&gt; a. Collect and analyse data from: Rainfall patterns Soil moisture sensors Satellite imagery Terrain/slope data Historical landslide records b. Use AI/ML models to identify high-risk zones and predict possible landslide events.&lt;br&gt;&lt;br&gt; c. Provide real-time alerts to district administrations, disaster management authorities, and local communities.&lt;br&gt;&lt;br&gt; d. Integrate GIS mapping for visualization of vulnerable roads, villages, and infrastructure.&lt;br&gt;&lt;br&gt; e. Allow citizens/field officials to upload geo-tagged photos/videos of cracks, slope movement or blocked roads.&lt;br&gt;&lt;br&gt; &lt;b&gt;f. Generate dashboards showing:&lt;/b&gt;&lt;br&gt;&lt;br&gt; &amp;#8226; Risk severity levels&lt;br&gt; &amp;#8226; Road connectivity status&lt;br&gt; &amp;#8226; Weather-linked risk forecasts&lt;br&gt; &amp;#8226; Emergency response prioritisation. Support multilingual notifications and low-network/offline functionality for remote areas.&lt;br&gt;&lt;br&gt; &lt;b&gt;Expected Solution:&lt;/b&gt;&lt;br&gt;&lt;br&gt; &lt;b&gt;A scalable Al-based software platform with:&lt;/b&gt;&lt;br&gt;&lt;br&gt; &amp;#8226; Real-time GIS dashboard and risk heatmaps&lt;br&gt; &amp;#8226; AI/ML-based predictive analytics engine&lt;br&gt; &amp;#8226; Mobile/web application for field reporting and alerts.&lt;br&gt; &amp;#8226; Integration with IMD weather APIs, satellite feeds, and sensor data&lt;br&gt; &amp;#8226; Automated SMS/app-based early warning system&lt;br&gt; &amp;#8226; Cloud-based architecture with offline sync support for remote regions The solution should improve disaster preparedness, reduce loss of life and infrastructure damage, and strengthen climate-resilient governance in the North Eastern Region.&lt;br&gt;</div> -->
+                                 <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> <b>Background:</b><br><br> The North Eastern Region (NER) frequently faces landslides, flash floods, road blockages, and slope failures due to heavy rainfall, fragile terrain, and unplanned hill cutting. These incidents often disrupt connectivity, damage infrastructure, delay emergency response, and isolate remote villages for days. Currently, monitoring of vulnerable zones is mostly reactive and dependent on manual reporting. There is limited use of real-time predictive systems for identifying high-risk zones and issuing early warnings to authorities and local communities. With increasing climate vulnerability in the region, there is a need for an AI-enabled real-time monitoring and prediction system that can help authorities take preventive action before disasters occur.<br><br> <b>Description:</b><br><br> This problem statement proposes the development of an Al-powered early warning and monitoring platform capable of predicting and tracking landslide-prone areas in real time across the North Eastern Region. The solution should:<br><br> a. Collect and analyse data from: Rainfall patterns Soil moisture sensors Satellite imagery Terrain/slope data Historical landslide records b. Use AI/ML models to identify high-risk zones and predict possible landslide events.<br><br> c. Provide real-time alerts to district administrations, disaster management authorities, and local communities.<br><br> d. Integrate GIS mapping for visualization of vulnerable roads, villages, and infrastructure.<br><br> e. Allow citizens/field officials to upload geo-tagged photos/videos of cracks, slope movement or blocked roads.<br><br> <b>f. Generate dashboards showing:</b><br><br> • Risk severity levels<br> • Road connectivity status<br> • Weather-linked risk forecasts<br> • Emergency response prioritisation. Support multilingual notifications and low-network/offline functionality for remote areas.<br><br> <b>Expected Solution:</b><br><br> <b>A scalable Al-based software platform with:</b><br><br> • Real-time GIS dashboard and risk heatmaps<br> • AI/ML-based predictive analytics engine<br> • Mobile/web application for field reporting and alerts.<br> • Integration with IMD weather APIs, satellite feeds, and sensor data<br> • Automated SMS/app-based early warning system<br> • Cloud-based architecture with offline sync support for remote regions The solution should improve disaster preparedness, reduce loss of life and infrastructure damage, and strengthen climate-resilient governance in the North Eastern Region.<br></div>
+                               </td>
+                            </tr>
+
+                            <tr>
+                                <th>Organization</th>
+                            <td>Ministry of Development of North Eastern Region (MDoNER) </td>
+                                            
+                            </tr>  
+                            
+                            <tr>
+                                <th>Department</th>
+                            <td>
+                                Ministry of Development of North Eastern Region (MDoNER) 
+                                <!-- echo $user_info->department;  -->
+                            </td>
+                                            
+                            </tr>  
+
+                            <tr>
+                            <th>Category</th>
+                            <td>Software</td>
+                            </tr>
+
+                            <tr>
+                            <th>Theme</th>
+                            <td>Disaster Management</td>
+                            </tr>
+                            <tr>
+                              <th>Youtube Link</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+                          <!--                             <tr>
+                              <th>Dataset Link</th>
+                              <td>
+                                
+                                    <br>
+                                     <a href=""><br></a>
+                                 <a href="https://www.sih.gov.in/dataset/"><br></a>
+                                                                                          </td>  
+                            </tr> -->
+                                                                <tr>
+                                    <th>Dataset Link</th>
+                                    <td>
+                                                                            </td>
+                                    </tr>
+
+                            <tr>
+                              <th>Contact info</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+    
+                      </thead>
+                     </table> 
+                </div>
+
+                </div>
+
+                </div>
+                </div>
+            </td>
+            
+            <td>Software</td>
+            <td>SIH26001</td>
+            <td>8/500</td>
+           
+            <td>Disaster Management</td>
+            <td>30 September 2026</td>
+
+            <!-- <td>30-09-2026</td> -->
+        </tr><tr role="row" class="even">
+             <td class="colomn_border sorting_1">2</td>
+<!--<td></td>-->
+
+
+        <td class="colomn_border">Ministry of Development of North Eastern Region (MDoNER)</td>
+        <td class="colomn_border"><a style="font-size:15px ;margin-bottom: 4px !important; cursor: pointer" data-toggle="modal" data-target="#ViewProblemStatement26002">Al-Based Smart Logistics and Accessibility Intelligence Platform for North Eastern Region (NER)</a>
+            <div id="ViewProblemStatement26002" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Modal content-->
+             <div class="modal-content">
+                <div class="modal-header">                    
+                    <button type="button" class="close PSclose" data-dismiss="modal">×</button>                    
+					<div class="row">
+						<div class="col-md-6">
+							<div class="psLogoModal">
+								<img class="navbar-brand" src="/img1/SIH-Logo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="psTitleModalTop">
+								<h6 class="modal-title"> Problem Statement Details  </h6>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-body">
+                   
+                    <table id="settings" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement ID</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> 26002</div>
+                               </td>
+                            </tr>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement Title</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> Al-Based Smart Logistics and Accessibility Intelligence Platform for North Eastern Region (NER)</div>
+                               </td>
+                            </tr>
+                            <tr>
+                            <th style="vertical-align: top;">Description</th>
+                            <td>
+                                <!-- <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> &lt;b&gt;Background:&lt;/b&gt;&lt;br&gt;&lt;br&gt; The North Eastern Region (NER) faces major logistics and accessibility challenges due to difficult terrain, extreme weather conditions, limited transport connectivity, and frequent road disruptions caused by landslides, floods, and infrastructure gaps. Transportation of essential goods such as medicines, food supplies, construction materials, and agricultural produce to remote districts often gets delayed, leading to supply shortages, increased costs, and disruption in public service delivery. Currently, there is no integrated intelligent platform that can provide real-time logistics visibility, route accessibility status, predictive disruption alerts, and optimized transportation planning for the region. To strengthen regional connectivity and support infrastructure-led development initiatives, there is a need for an Al-enabled logistics intelligence system tailored for the unique geographical and operational challenges of NER.&lt;br&gt;&lt;br&gt; &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;&lt;br&gt; This problem statement seeks the development of an Al-powered Smart and in Logistics Accessibility Intelligence Platform for the North Eastern Region (NER) to address challenges related to difficult terrain, weather-induced disruptions, and limited transport connectivity remote areas. The platform should use Artificial Intelligence (Al), Machine Learning (ML), GIS mapping, weather data, and real-time field inputs to monitor transportation networks and improve movement of essential goods and services across the region. The platform should:&lt;br&gt;&lt;br&gt; a. Monitoring real-time road, bridge, and transport accessibility across districts and remote locations b. Predicting possible route disruptions caused by landslides, floods, heavy rainfall, road damage, or traffic congestion c. Providing Al-based alternate route suggestions and estimated travel delays d. Tracking movement of vehicles carrying essential commodities, medicines, agricultural produce, and construction materials through GPS integration e. Generating automated alerts for blocked roads, inaccessible regions, delayed deliveries, and high-risk transport corridors f. Enabling field officials and local authorities to upload geo-tagged updates, photographs, and incident reports from remote locations g. Creating centralized dashboards for visualizing:&lt;br&gt;&lt;br&gt; &amp;#8226; District-wise connectivity status&lt;br&gt; &amp;#8226; Logistics bottlenecks and supply chain gaps Emergency and disaster-time accessibility routes&lt;br&gt; &amp;#8226; Real-time movement and delivery status of essential supplies h. Supporting multilingual notifications and offline data synchronization for low-network areas The platform should help improve regional connectivity, strengthen emergency response systems, reduce supply chain disruptions, and support efficient planning and monitoring of logistics operations in the North Eastern Region.&lt;br&gt;&lt;br&gt; &lt;b&gt;Expected Solution:&lt;/b&gt;&lt;br&gt;&lt;br&gt; &amp;#8226; A scalable Al-based software platform integrated with GIS and real-time analytics featuring:&lt;br&gt; &amp;#8226; Al-powered route prediction and optimization engine&lt;br&gt; &amp;#8226; GIS-enabled accessibility monitoring dashboard&lt;br&gt; &amp;#8226; GPS-based vehicle tracking system&lt;br&gt; &amp;#8226; Real-time alert and notification mechanism&lt;br&gt; &amp;#8226; Mobile/web application for field-level reporting and monitoring Integration capability with weather APIs, transport databases, and government monitoring systems&lt;br&gt; &amp;#8226; Cloud-based infrastructure with secure data management and offline support The platform should improve regional logistics efficiency, reduce supply disruptions, strengthen emergency response capability, and support infrastructure and economic development across the North Eastern Region.&lt;br&gt;</div> -->
+                                 <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> <b>Background:</b><br><br> The North Eastern Region (NER) faces major logistics and accessibility challenges due to difficult terrain, extreme weather conditions, limited transport connectivity, and frequent road disruptions caused by landslides, floods, and infrastructure gaps. Transportation of essential goods such as medicines, food supplies, construction materials, and agricultural produce to remote districts often gets delayed, leading to supply shortages, increased costs, and disruption in public service delivery. Currently, there is no integrated intelligent platform that can provide real-time logistics visibility, route accessibility status, predictive disruption alerts, and optimized transportation planning for the region. To strengthen regional connectivity and support infrastructure-led development initiatives, there is a need for an Al-enabled logistics intelligence system tailored for the unique geographical and operational challenges of NER.<br><br> <b>Description:</b><br><br> This problem statement seeks the development of an Al-powered Smart and in Logistics Accessibility Intelligence Platform for the North Eastern Region (NER) to address challenges related to difficult terrain, weather-induced disruptions, and limited transport connectivity remote areas. The platform should use Artificial Intelligence (Al), Machine Learning (ML), GIS mapping, weather data, and real-time field inputs to monitor transportation networks and improve movement of essential goods and services across the region. The platform should:<br><br> a. Monitoring real-time road, bridge, and transport accessibility across districts and remote locations b. Predicting possible route disruptions caused by landslides, floods, heavy rainfall, road damage, or traffic congestion c. Providing Al-based alternate route suggestions and estimated travel delays d. Tracking movement of vehicles carrying essential commodities, medicines, agricultural produce, and construction materials through GPS integration e. Generating automated alerts for blocked roads, inaccessible regions, delayed deliveries, and high-risk transport corridors f. Enabling field officials and local authorities to upload geo-tagged updates, photographs, and incident reports from remote locations g. Creating centralized dashboards for visualizing:<br><br> • District-wise connectivity status<br> • Logistics bottlenecks and supply chain gaps Emergency and disaster-time accessibility routes<br> • Real-time movement and delivery status of essential supplies h. Supporting multilingual notifications and offline data synchronization for low-network areas The platform should help improve regional connectivity, strengthen emergency response systems, reduce supply chain disruptions, and support efficient planning and monitoring of logistics operations in the North Eastern Region.<br><br> <b>Expected Solution:</b><br><br> • A scalable Al-based software platform integrated with GIS and real-time analytics featuring:<br> • Al-powered route prediction and optimization engine<br> • GIS-enabled accessibility monitoring dashboard<br> • GPS-based vehicle tracking system<br> • Real-time alert and notification mechanism<br> • Mobile/web application for field-level reporting and monitoring Integration capability with weather APIs, transport databases, and government monitoring systems<br> • Cloud-based infrastructure with secure data management and offline support The platform should improve regional logistics efficiency, reduce supply disruptions, strengthen emergency response capability, and support infrastructure and economic development across the North Eastern Region.<br></div>
+                               </td>
+                            </tr>
+
+                            <tr>
+                                <th>Organization</th>
+                            <td>Ministry of Development of North Eastern Region (MDoNER) </td>
+                                            
+                            </tr>  
+                            
+                            <tr>
+                                <th>Department</th>
+                            <td>
+                                Ministry of Development of North Eastern Region (MDoNER) 
+                                <!-- echo $user_info->department;  -->
+                            </td>
+                                            
+                            </tr>  
+
+                            <tr>
+                            <th>Category</th>
+                            <td>Software</td>
+                            </tr>
+
+                            <tr>
+                            <th>Theme</th>
+                            <td>Transportation &amp; Logistics</td>
+                            </tr>
+                            <tr>
+                              <th>Youtube Link</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+                          <!--                             <tr>
+                              <th>Dataset Link</th>
+                              <td>
+                                
+                                    <br>
+                                     <a href=""><br></a>
+                                 <a href="https://www.sih.gov.in/dataset/"><br></a>
+                                                                                          </td>  
+                            </tr> -->
+                                                                <tr>
+                                    <th>Dataset Link</th>
+                                    <td>
+                                                                            </td>
+                                    </tr>
+
+                            <tr>
+                              <th>Contact info</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+    
+                      </thead>
+                     </table> 
+                </div>
+
+                </div>
+
+                </div>
+                </div>
+            </td>
+            
+            <td>Software</td>
+            <td>SIH26002</td>
+            <td>4/500</td>
+           
+            <td>Transportation &amp; Logistics</td>
+            <td>30 September 2026</td>
+
+            <!-- <td>30-09-2026</td> -->
+        </tr><tr role="row" class="odd">
+             <td class="colomn_border sorting_1">3</td>
+<!--<td></td>-->
+
+
+        <td class="colomn_border">Ministry of Development of North Eastern Region (MDoNER)</td>
+        <td class="colomn_border"><a style="font-size:15px ;margin-bottom: 4px !important; cursor: pointer" data-toggle="modal" data-target="#ViewProblemStatement26003">AI-Based Cognitive Gaming and Memory Assistance Platform for Elderly Dementia Patients in North Eastern Region (NER)</a>
+            <div id="ViewProblemStatement26003" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Modal content-->
+             <div class="modal-content">
+                <div class="modal-header">                    
+                    <button type="button" class="close PSclose" data-dismiss="modal">×</button>                    
+					<div class="row">
+						<div class="col-md-6">
+							<div class="psLogoModal">
+								<img class="navbar-brand" src="/img1/SIH-Logo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="psTitleModalTop">
+								<h6 class="modal-title"> Problem Statement Details  </h6>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-body">
+                   
+                    <table id="settings" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement ID</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> 26003</div>
+                               </td>
+                            </tr>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement Title</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> AI-Based Cognitive Gaming and Memory Assistance Platform for Elderly Dementia Patients in North Eastern Region (NER)</div>
+                               </td>
+                            </tr>
+                            <tr>
+                            <th style="vertical-align: top;">Description</th>
+                            <td>
+                                <!-- <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> &lt;b&gt;Background:&lt;/b&gt;&lt;br&gt;&lt;br&gt; The North Eastern Region (NER) is witnessing a gradual rise in age-related cognitive disorders such as dementia and memory loss among the elderly population. Many families in remote and rural areas face challenges in accessing specialized neurological care, cognitive therapy, and long-term elderly support services due to limited healthcare infrastructure and geographical barriers.&lt;br&gt;&lt;br&gt; Elderly patients suffering from dementia often experience memory decline, confusion, anxiety, and social isolation, while caregivers face difficulties in continuous monitoring and engagement. There is limited availability of affordable and culturally inclusive digital therapeutic solutions tailored for elderly individuals in the North-Eastern Region.&lt;br&gt;&lt;br&gt; To strengthen elderly healthcare and improve cognitive well-being, there is a need for an accessible, engaging, and Al-enabled cognitive gaming solution designed specifically for dementia patients in NER.&lt;br&gt;&lt;br&gt; &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;&lt;br&gt; This problem statement seeks the development of an AI-powered cognitive gaming and memory assistance platform for elderly dementia patients in the North Eastern Region.&lt;br&gt;&lt;br&gt; &lt;b&gt;The solution should:&lt;/b&gt;&lt;br&gt;&lt;br&gt; &lt;b&gt;a. Include interactive cognitive games and activities focused on:&lt;/b&gt;&lt;br&gt;&lt;br&gt; &amp;#8226; Memory improvement&lt;br&gt; &amp;#8226; Attention and concentration 0 Daily routine recall&lt;br&gt; &amp;#8226; Pattern and object recognition of emotional and mental engagement b. Use AI/ML algorithms to adapt difficulty levels based on patient performance and cognitive condition c. Support multilingual and voice-assisted interaction suitable for elderly users in NER Include culturally familiar themes, visuals, sounds, and regional language support for d. better engagement e. Provide reminders for:&lt;br&gt; &amp;#8226; Medicines&lt;br&gt; &amp;#8226; Hydration&lt;br&gt; &amp;#8226; Daily activities&lt;br&gt; &amp;#8226; Medical appointments.&lt;br&gt;&lt;br&gt; f. Enable caregivers and healthcare workers to monitor patient progress through dashboards and activity levels g. Work in low-connectivity environments with offline functionality support h. Be accessible through mobile/tablet devices with a simple and elderly-friendly interface The platform should encourage long-term cognitive engagement, emotional well-being, and social interaction among elderly users.&lt;br&gt;&lt;br&gt; &lt;b&gt;Expected Solution: A user-friendly Al-enabled cognitive assistance platform with:&lt;/b&gt;&lt;br&gt;&lt;br&gt; &amp;#8226; Adaptive gaming and memory training modules&lt;br&gt; &amp;#8226; Voice-enabled multilingual interface&lt;br&gt; &amp;#8226; Cognitive performance tracking and analytics dashboard&lt;br&gt; &amp;#8226; Caregiver monitoring and alert system&lt;br&gt; &amp;#8226; Offline synchronization support for remote areas&lt;br&gt; &amp;#8226; Secure patient data management system&lt;br&gt; &amp;#8226; Simple and accessible UI/UX designed for elderly users The solution should support early cognitive intervention, improve quality of life for elderly dementia patients, and strengthen digital healthcare accessibility across the North Eastern Region.&lt;br&gt;</div> -->
+                                 <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> <b>Background:</b><br><br> The North Eastern Region (NER) is witnessing a gradual rise in age-related cognitive disorders such as dementia and memory loss among the elderly population. Many families in remote and rural areas face challenges in accessing specialized neurological care, cognitive therapy, and long-term elderly support services due to limited healthcare infrastructure and geographical barriers.<br><br> Elderly patients suffering from dementia often experience memory decline, confusion, anxiety, and social isolation, while caregivers face difficulties in continuous monitoring and engagement. There is limited availability of affordable and culturally inclusive digital therapeutic solutions tailored for elderly individuals in the North-Eastern Region.<br><br> To strengthen elderly healthcare and improve cognitive well-being, there is a need for an accessible, engaging, and Al-enabled cognitive gaming solution designed specifically for dementia patients in NER.<br><br> <b>Description:</b><br><br> This problem statement seeks the development of an AI-powered cognitive gaming and memory assistance platform for elderly dementia patients in the North Eastern Region.<br><br> <b>The solution should:</b><br><br> <b>a. Include interactive cognitive games and activities focused on:</b><br><br> • Memory improvement<br> • Attention and concentration 0 Daily routine recall<br> • Pattern and object recognition of emotional and mental engagement b. Use AI/ML algorithms to adapt difficulty levels based on patient performance and cognitive condition c. Support multilingual and voice-assisted interaction suitable for elderly users in NER Include culturally familiar themes, visuals, sounds, and regional language support for d. better engagement e. Provide reminders for:<br> • Medicines<br> • Hydration<br> • Daily activities<br> • Medical appointments.<br><br> f. Enable caregivers and healthcare workers to monitor patient progress through dashboards and activity levels g. Work in low-connectivity environments with offline functionality support h. Be accessible through mobile/tablet devices with a simple and elderly-friendly interface The platform should encourage long-term cognitive engagement, emotional well-being, and social interaction among elderly users.<br><br> <b>Expected Solution: A user-friendly Al-enabled cognitive assistance platform with:</b><br><br> • Adaptive gaming and memory training modules<br> • Voice-enabled multilingual interface<br> • Cognitive performance tracking and analytics dashboard<br> • Caregiver monitoring and alert system<br> • Offline synchronization support for remote areas<br> • Secure patient data management system<br> • Simple and accessible UI/UX designed for elderly users The solution should support early cognitive intervention, improve quality of life for elderly dementia patients, and strengthen digital healthcare accessibility across the North Eastern Region.<br></div>
+                               </td>
+                            </tr>
+
+                            <tr>
+                                <th>Organization</th>
+                            <td>Ministry of Development of North Eastern Region (MDoNER) </td>
+                                            
+                            </tr>  
+                            
+                            <tr>
+                                <th>Department</th>
+                            <td>
+                                Ministry of Development of North Eastern Region (MDoNER) 
+                                <!-- echo $user_info->department;  -->
+                            </td>
+                                            
+                            </tr>  
+
+                            <tr>
+                            <th>Category</th>
+                            <td>Software</td>
+                            </tr>
+
+                            <tr>
+                            <th>Theme</th>
+                            <td>MedTech / BioTech / HealthTech</td>
+                            </tr>
+                            <tr>
+                              <th>Youtube Link</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+                          <!--                             <tr>
+                              <th>Dataset Link</th>
+                              <td>
+                                
+                                    <br>
+                                     <a href=""><br></a>
+                                 <a href="https://www.sih.gov.in/dataset/"><br></a>
+                                                                                          </td>  
+                            </tr> -->
+                                                                <tr>
+                                    <th>Dataset Link</th>
+                                    <td>
+                                                                            </td>
+                                    </tr>
+
+                            <tr>
+                              <th>Contact info</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+    
+                      </thead>
+                     </table> 
+                </div>
+
+                </div>
+
+                </div>
+                </div>
+            </td>
+            
+            <td>Software</td>
+            <td>SIH26003</td>
+            <td>3/500</td>
+           
+            <td>MedTech / BioTech / HealthTech</td>
+            <td>30 September 2026</td>
+
+            <!-- <td>30-09-2026</td> -->
+        </tr><tr role="row" class="even">
+             <td class="colomn_border sorting_1">4</td>
+<!--<td></td>-->
+
+
+        <td class="colomn_border">Ministry of Development of North Eastern Region (MDoNER)</td>
+        <td class="colomn_border"><a style="font-size:15px ;margin-bottom: 4px !important; cursor: pointer" data-toggle="modal" data-target="#ViewProblemStatement26004">Al-Assisted Early Detection System for Osteoarthritis (OA) Risk Markers in North Eastern Region (NER)</a>
+            <div id="ViewProblemStatement26004" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Modal content-->
+             <div class="modal-content">
+                <div class="modal-header">                    
+                    <button type="button" class="close PSclose" data-dismiss="modal">×</button>                    
+					<div class="row">
+						<div class="col-md-6">
+							<div class="psLogoModal">
+								<img class="navbar-brand" src="/img1/SIH-Logo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="psTitleModalTop">
+								<h6 class="modal-title"> Problem Statement Details  </h6>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-body">
+                   
+                    <table id="settings" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement ID</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> 26004</div>
+                               </td>
+                            </tr>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement Title</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> Al-Assisted Early Detection System for Osteoarthritis (OA) Risk Markers in North Eastern Region (NER)</div>
+                               </td>
+                            </tr>
+                            <tr>
+                            <th style="vertical-align: top;">Description</th>
+                            <td>
+                                <!-- <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> &lt;b&gt;Background:&lt;/b&gt;&lt;br&gt;&lt;br&gt; Osteoarthritis (OA) is one of the most common musculoskeletal disorders affecting elderly individuals and physically active populations, leading to chronic pain, joint stiffness, mobility issues, and reduced quality of life.&lt;br&gt;&lt;br&gt; In the North Eastern Region (NER), difficult terrain, physically demanding livelihoods, aging population, and limited access to specialized orthopaedic care further increase the burden of undiagnosed and untreated osteoarthritis cases. Early identification of OA risk markers is critical for timely intervention and preventive healthcare management.&lt;br&gt;&lt;br&gt; However, healthcare facilities in many remote and rural areas of NER lack affordable screening tools, specialist support, and diagnostic infrastructure for early-stage detection of osteoarthritis. There is a need for a technology-driven solution that can assist healthcare workers in identifying early OA indicators and supporting preventive screening in low-resource settings across the North Eastern Region.&lt;br&gt;&lt;br&gt; &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;&lt;br&gt; This problem statement seeks to develop an AI-assisted screening and detection system for identifying early risk markers and symptoms associated with Osteoarthritis (OA) in the North Eastern Region. The solution should:&lt;br&gt;&lt;br&gt; a. Assist in early detection of OA-related risk markers through&lt;br&gt;&lt;br&gt; &amp;#8226; Joint movement analysis&lt;br&gt; &amp;#8226; Gait and posture assessment&lt;br&gt; &amp;#8226; Pain and mobility screening inputs&lt;br&gt; &amp;#8226; Medical imaging or sensor-based assessment (if applicable)&lt;br&gt;&lt;br&gt; b. Use AI/ML techniques to analyse patient data and identify high-risk cases for early intervention c. Support screening in primary healthcare centres, rural health camps, and community outreach programs d. Provide preliminary OA risk assessment and severity indication e. Enable healthcare workers to digitally record patient symptoms and screening reports f. Include multilingual and easy-to-use interfaces suitable for rural healthcare settings in NER g. Work in low-connectivity environments with offline data collection capability h. Provide awareness and preventive guidance related to joint care, physical activity, nutrition, and lifestyle management The solution should be portable, affordable, and suitable for deployment in remote and underserved areas.&lt;br&gt;&lt;br&gt; &lt;b&gt;Expected Solution:&lt;/b&gt;&lt;br&gt;&lt;br&gt; &lt;b&gt;A scalable Al-enabled healthcare screening solution with:&lt;/b&gt;&lt;br&gt;&lt;br&gt; &amp;#8226; Al-based OA risk analysis and screening module&lt;br&gt; &amp;#8226; Portable assessment interface or sensor-assisted screening mechanism&lt;br&gt; &amp;#8226; Digital patient record and report generation system&lt;br&gt; &amp;#8226; Mobile/web-based healthcare worker interface&lt;br&gt; &amp;#8226; Offline synchronization capability for remote areas&lt;br&gt; &amp;#8226; Multilingual support and simplified workflow for field deployment&lt;br&gt; &amp;#8226; Secure patient data management and analytics dashboard The solution should support early diagnosis, preventive healthcare intervention, and improved accessibility to musculoskeletal healthcare services in the North Eastern Region.&lt;br&gt;</div> -->
+                                 <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> <b>Background:</b><br><br> Osteoarthritis (OA) is one of the most common musculoskeletal disorders affecting elderly individuals and physically active populations, leading to chronic pain, joint stiffness, mobility issues, and reduced quality of life.<br><br> In the North Eastern Region (NER), difficult terrain, physically demanding livelihoods, aging population, and limited access to specialized orthopaedic care further increase the burden of undiagnosed and untreated osteoarthritis cases. Early identification of OA risk markers is critical for timely intervention and preventive healthcare management.<br><br> However, healthcare facilities in many remote and rural areas of NER lack affordable screening tools, specialist support, and diagnostic infrastructure for early-stage detection of osteoarthritis. There is a need for a technology-driven solution that can assist healthcare workers in identifying early OA indicators and supporting preventive screening in low-resource settings across the North Eastern Region.<br><br> <b>Description:</b><br><br> This problem statement seeks to develop an AI-assisted screening and detection system for identifying early risk markers and symptoms associated with Osteoarthritis (OA) in the North Eastern Region. The solution should:<br><br> a. Assist in early detection of OA-related risk markers through<br><br> • Joint movement analysis<br> • Gait and posture assessment<br> • Pain and mobility screening inputs<br> • Medical imaging or sensor-based assessment (if applicable)<br><br> b. Use AI/ML techniques to analyse patient data and identify high-risk cases for early intervention c. Support screening in primary healthcare centres, rural health camps, and community outreach programs d. Provide preliminary OA risk assessment and severity indication e. Enable healthcare workers to digitally record patient symptoms and screening reports f. Include multilingual and easy-to-use interfaces suitable for rural healthcare settings in NER g. Work in low-connectivity environments with offline data collection capability h. Provide awareness and preventive guidance related to joint care, physical activity, nutrition, and lifestyle management The solution should be portable, affordable, and suitable for deployment in remote and underserved areas.<br><br> <b>Expected Solution:</b><br><br> <b>A scalable Al-enabled healthcare screening solution with:</b><br><br> • Al-based OA risk analysis and screening module<br> • Portable assessment interface or sensor-assisted screening mechanism<br> • Digital patient record and report generation system<br> • Mobile/web-based healthcare worker interface<br> • Offline synchronization capability for remote areas<br> • Multilingual support and simplified workflow for field deployment<br> • Secure patient data management and analytics dashboard The solution should support early diagnosis, preventive healthcare intervention, and improved accessibility to musculoskeletal healthcare services in the North Eastern Region.<br></div>
+                               </td>
+                            </tr>
+
+                            <tr>
+                                <th>Organization</th>
+                            <td>Ministry of Development of North Eastern Region (MDoNER) </td>
+                                            
+                            </tr>  
+                            
+                            <tr>
+                                <th>Department</th>
+                            <td>
+                                Ministry of Development of North Eastern Region (MDoNER) 
+                                <!-- echo $user_info->department;  -->
+                            </td>
+                                            
+                            </tr>  
+
+                            <tr>
+                            <th>Category</th>
+                            <td>Hardware</td>
+                            </tr>
+
+                            <tr>
+                            <th>Theme</th>
+                            <td>MedTech / BioTech / HealthTech</td>
+                            </tr>
+                            <tr>
+                              <th>Youtube Link</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+                          <!--                             <tr>
+                              <th>Dataset Link</th>
+                              <td>
+                                
+                                    <br>
+                                     <a href=""><br></a>
+                                 <a href="https://www.sih.gov.in/dataset/"><br></a>
+                                                                                          </td>  
+                            </tr> -->
+                                                                <tr>
+                                    <th>Dataset Link</th>
+                                    <td>
+                                                                            </td>
+                                    </tr>
+
+                            <tr>
+                              <th>Contact info</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+    
+                      </thead>
+                     </table> 
+                </div>
+
+                </div>
+
+                </div>
+                </div>
+            </td>
+            
+            <td>Hardware</td>
+            <td>SIH26004</td>
+            <td>0/500</td>
+           
+            <td>MedTech / BioTech / HealthTech</td>
+            <td>30 September 2026</td>
+
+            <!-- <td>30-09-2026</td> -->
+        </tr><tr role="row" class="odd">
+             <td class="colomn_border sorting_1">5</td>
+<!--<td></td>-->
+
+
+        <td class="colomn_border">Ministry of Development of North Eastern Region (MDoNER)</td>
+        <td class="colomn_border"><a style="font-size:15px ;margin-bottom: 4px !important; cursor: pointer" data-toggle="modal" data-target="#ViewProblemStatement26005">Solar-Powered Smart Mini Cold Storage System for Fresh Vegetables in North Eastern Region (NER)</a>
+            <div id="ViewProblemStatement26005" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Modal content-->
+             <div class="modal-content">
+                <div class="modal-header">                    
+                    <button type="button" class="close PSclose" data-dismiss="modal">×</button>                    
+					<div class="row">
+						<div class="col-md-6">
+							<div class="psLogoModal">
+								<img class="navbar-brand" src="/img1/SIH-Logo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="psTitleModalTop">
+								<h6 class="modal-title"> Problem Statement Details  </h6>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-body">
+                   
+                    <table id="settings" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement ID</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> 26005</div>
+                               </td>
+                            </tr>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement Title</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> Solar-Powered Smart Mini Cold Storage System for Fresh Vegetables in North Eastern Region (NER)</div>
+                               </td>
+                            </tr>
+                            <tr>
+                            <th style="vertical-align: top;">Description</th>
+                            <td>
+                                <!-- <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> &lt;b&gt;Background:&lt;/b&gt;&lt;br&gt;&lt;br&gt; The North Eastern Region (NER) produces a substantial quantity of fresh vegetables and horticultural crops. However, due to inadequate cold storage infrastructure, unreliable electricity supply, difficult terrain, and transportation delays, farmers often face heavy post-harvest losses. Most remote farming areas lack access to affordable small-scale cold storage facilities near production clusters and local markets. As a result, fresh vegetables deteriorate rapidly before reaching consumers, reducing farmer income and affecting supply chain efficiency. There is a need for a low-cost, energy-efficient, and decentralized cold storage solution suitable for rural and remote regions of NER.&lt;br&gt;&lt;br&gt; &lt;b&gt;Description:&lt;/b&gt;&lt;br&gt;&lt;br&gt; This problem statement seeks the development of a Solar-Powered Smart Mini Cold Storage System for farmers and vegetable producers in the North Eastern Region (NER) to reduce postharvest losses of perishable vegetables. Due to poor cold-chain infrastructure, difficult transportation routes, frequent power cuts, and long travel durations from remote villages to markets, fresh vegetables often spoil within a short time after harvest. Farmers are forced to sell produce at low prices or suffer financial losses due to lack of nearby storage facilities. The proposed system should function as a decentralized mini cold storage unit that can be installed at village-level collection centres, local markets, farmer cooperatives, and farm-gate aggregation points.&lt;br&gt;&lt;br&gt; &lt;b&gt;The system should:&lt;/b&gt;&lt;br&gt;&lt;br&gt; a. Preserve fresh vegetables such as tomatoes, cabbage, beans, leafy vegetables, chilli, and other horticultural produce under suitable storage conditions b. Operate using solar energy with battery backup support for off-grid and low-electricity areas c. Maintain controlled temperature and humidity levels for extending shelf life of vegetables d. Include smart monitoring features for:&lt;br&gt;&lt;br&gt; &amp;#8226; Temperature fluctuation&lt;br&gt; &amp;#8226; Humidity variation&lt;br&gt; &amp;#8226; Power failure alerts&lt;br&gt; &amp;#8226; Storage condition status e. Be compact, modular, and suitable for deployment in remote hilly terrain and rural agricultural clusters f. Be energy-efficient, weather-resistant, and capable of operating under varying climatic conditions of NER g. Support easy operation and low maintenance for farmer groups, cooperatives, and local vendors h. Help reduce spoilage during temporary storage before transportation to larger markets The solution should strengthen local agricultural supply chains, reduce vegetable wastage, improve market accessibility, and enhance income opportunities for farmers in the North Eastern Region.&lt;br&gt;&lt;br&gt; &lt;b&gt;Expected Solution:&lt;/b&gt;&lt;br&gt;&lt;br&gt; A functional hardware-based smart mini cold storage system suitable for rural and remote agricultural areas of the North Eastern Region. The proposed solution should include:&lt;br&gt;&lt;br&gt; a. Solar-powered cooling system with energy-efficient operation b. Insulated cold storage chamber for preserving fresh vegetables and horticultural produce c. Battery backup support for uninterrupted operation during power outages or low sunlight conditions d. Temperature and humidity monitoring mechanism for maintaining suitable storage conditions e. Smart alert/indicator system for:&lt;br&gt;&lt;br&gt; &amp;#8226; Temperature fluctuations&lt;br&gt; &amp;#8226; Power failure&lt;br&gt; &amp;#8226; Unsafe storage conditions f. Compact and modular design suitable for village-level deployment and difficult terrain g. Weather-resistant and durable structure for varying climatic conditions in NER h. Low-maintenance and cost-effective system suitable for farmer cooperatives, local markets, and collection centres i. Basic digital monitoring/display interface for storage status and system performance The solution should help reduce post-harvest vegetable spoilage, improve shelf life of produce, strengthen local cold-chain infrastructure, and enhance income opportunities for farmers in the North Eastern Region.&lt;br&gt;</div> -->
+                                 <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> <b>Background:</b><br><br> The North Eastern Region (NER) produces a substantial quantity of fresh vegetables and horticultural crops. However, due to inadequate cold storage infrastructure, unreliable electricity supply, difficult terrain, and transportation delays, farmers often face heavy post-harvest losses. Most remote farming areas lack access to affordable small-scale cold storage facilities near production clusters and local markets. As a result, fresh vegetables deteriorate rapidly before reaching consumers, reducing farmer income and affecting supply chain efficiency. There is a need for a low-cost, energy-efficient, and decentralized cold storage solution suitable for rural and remote regions of NER.<br><br> <b>Description:</b><br><br> This problem statement seeks the development of a Solar-Powered Smart Mini Cold Storage System for farmers and vegetable producers in the North Eastern Region (NER) to reduce postharvest losses of perishable vegetables. Due to poor cold-chain infrastructure, difficult transportation routes, frequent power cuts, and long travel durations from remote villages to markets, fresh vegetables often spoil within a short time after harvest. Farmers are forced to sell produce at low prices or suffer financial losses due to lack of nearby storage facilities. The proposed system should function as a decentralized mini cold storage unit that can be installed at village-level collection centres, local markets, farmer cooperatives, and farm-gate aggregation points.<br><br> <b>The system should:</b><br><br> a. Preserve fresh vegetables such as tomatoes, cabbage, beans, leafy vegetables, chilli, and other horticultural produce under suitable storage conditions b. Operate using solar energy with battery backup support for off-grid and low-electricity areas c. Maintain controlled temperature and humidity levels for extending shelf life of vegetables d. Include smart monitoring features for:<br><br> • Temperature fluctuation<br> • Humidity variation<br> • Power failure alerts<br> • Storage condition status e. Be compact, modular, and suitable for deployment in remote hilly terrain and rural agricultural clusters f. Be energy-efficient, weather-resistant, and capable of operating under varying climatic conditions of NER g. Support easy operation and low maintenance for farmer groups, cooperatives, and local vendors h. Help reduce spoilage during temporary storage before transportation to larger markets The solution should strengthen local agricultural supply chains, reduce vegetable wastage, improve market accessibility, and enhance income opportunities for farmers in the North Eastern Region.<br><br> <b>Expected Solution:</b><br><br> A functional hardware-based smart mini cold storage system suitable for rural and remote agricultural areas of the North Eastern Region. The proposed solution should include:<br><br> a. Solar-powered cooling system with energy-efficient operation b. Insulated cold storage chamber for preserving fresh vegetables and horticultural produce c. Battery backup support for uninterrupted operation during power outages or low sunlight conditions d. Temperature and humidity monitoring mechanism for maintaining suitable storage conditions e. Smart alert/indicator system for:<br><br> • Temperature fluctuations<br> • Power failure<br> • Unsafe storage conditions f. Compact and modular design suitable for village-level deployment and difficult terrain g. Weather-resistant and durable structure for varying climatic conditions in NER h. Low-maintenance and cost-effective system suitable for farmer cooperatives, local markets, and collection centres i. Basic digital monitoring/display interface for storage status and system performance The solution should help reduce post-harvest vegetable spoilage, improve shelf life of produce, strengthen local cold-chain infrastructure, and enhance income opportunities for farmers in the North Eastern Region.<br></div>
+                               </td>
+                            </tr>
+
+                            <tr>
+                                <th>Organization</th>
+                            <td>Ministry of Development of North Eastern Region (MDoNER) </td>
+                                            
+                            </tr>  
+                            
+                            <tr>
+                                <th>Department</th>
+                            <td>
+                                Ministry of Development of North Eastern Region (MDoNER) 
+                                <!-- echo $user_info->department;  -->
+                            </td>
+                                            
+                            </tr>  
+
+                            <tr>
+                            <th>Category</th>
+                            <td>Hardware</td>
+                            </tr>
+
+                            <tr>
+                            <th>Theme</th>
+                            <td>Agriculture, FoodTech &amp; Rural Development</td>
+                            </tr>
+                            <tr>
+                              <th>Youtube Link</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+                          <!--                             <tr>
+                              <th>Dataset Link</th>
+                              <td>
+                                
+                                    <br>
+                                     <a href=""><br></a>
+                                 <a href="https://www.sih.gov.in/dataset/"><br></a>
+                                                                                          </td>  
+                            </tr> -->
+                                                                <tr>
+                                    <th>Dataset Link</th>
+                                    <td>
+                                                                            </td>
+                                    </tr>
+
+                            <tr>
+                              <th>Contact info</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+    
+                      </thead>
+                     </table> 
+                </div>
+
+                </div>
+
+                </div>
+                </div>
+            </td>
+            
+            <td>Hardware</td>
+            <td>SIH26005</td>
+            <td>1/500</td>
+           
+            <td>Agriculture, FoodTech &amp; Rural Development</td>
+            <td>30 September 2026</td>
+
+            <!-- <td>30-09-2026</td> -->
+        </tr><tr role="row" class="even">
+             <td class="colomn_border sorting_1">6</td>
+<!--<td></td>-->
+
+
+        <td class="colomn_border">Ministry of Steel</td>
+        <td class="colomn_border"><a style="font-size:15px ;margin-bottom: 4px !important; cursor: pointer" data-toggle="modal" data-target="#ViewProblemStatement26006">Development of an Intelligent Freight Forecasting Model for Optimized Vessel Chartering and Bulk Cargo Procurement from overseas to East Coast of India</a>
+            <div id="ViewProblemStatement26006" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Modal content-->
+             <div class="modal-content">
+                <div class="modal-header">                    
+                    <button type="button" class="close PSclose" data-dismiss="modal">×</button>                    
+					<div class="row">
+						<div class="col-md-6">
+							<div class="psLogoModal">
+								<img class="navbar-brand" src="/img1/SIH-Logo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="psTitleModalTop">
+								<h6 class="modal-title"> Problem Statement Details  </h6>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-body">
+                   
+                    <table id="settings" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement ID</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> 26006</div>
+                               </td>
+                            </tr>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement Title</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> Development of an Intelligent Freight Forecasting Model for Optimized Vessel Chartering and Bulk Cargo Procurement from overseas to East Coast of India</div>
+                               </td>
+                            </tr>
+                            <tr>
+                            <th style="vertical-align: top;">Description</th>
+                            <td>
+                                <!-- <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> &lt;b&gt;Background:&lt;/b&gt;&lt;br&gt;&lt;br&gt; The current approach to vessel chartering for bulk cargo procurement to India&#039;s East Coast ports often involves daily market exploration, leading to reactive decision-making and likely missed opportunities for cost savings and efficiency. The highly volatile nature of global freight markets, coupled with varying supply and demand dynamics from key origins like Australia, the US, Mozambique, Russia and Indonesia, makes it challenging to identify optimal entry points for short-term or mid-term charter contracts. Furthermore, without a robust future forecasting mechanism, determining the most suitable vessel type (e.g., Handysize, Supramax, Panamax,Capesize) for specific cargo parcels and routes, while accounting for port infrastructure limitations at both origin and destination, results in suboptimal utilization and increased idle time. This manual, market-dependent approach requires analytics to mitigate risks associated with freight fluctuations and port-specific constraints, directly impacting overall logistics costs and supply chain reliability. Detailed Description:&lt;br&gt;&lt;br&gt; The problem statement addresses the critical need for a sophisticated freight forecasting model to revolutionize vessel chartering and bulk cargo procurement for East Coast Indian ports. Currently, our operations are heavily reliant on daily engagements with the freight market. This traditional method leads to several inefficiencies: a lack of predictive insight into future freight rates, making it difficult to secure favorable short-term or mid-term charter contracts; an inability to proactively identify the optimal time to enter the market for specific vessel types and cargo sizes; and significant challenges in minimizing vessel idle time due to inadequate planning regarding port-specific infrastructure restrictions.&lt;br&gt;&lt;br&gt; For instance, procuring bulk cargo (such as coal) from Australia, the US,Mozambique, and Indonesia presents unique logistical challenges. Each origin-destination pair has distinct sailing distances, trade lane dynamics, and, crucially,varying port capabilities. East Coast Indian ports, like Paradip, Vizag, Gangavaram,Gopalpur, Dhamra, Sagar- Sandheads and Haldia, each possess specific draft restrictions, berthing limitations, and cargo handling capacities that dictate the maximum permissible vessel size and turnaround time.The proposed system should therefore integrate multiple data points for comprehensive analysis. This includes historical freight rate data for various vessel sizes across relevant trade routes, global economic indicators, commodity price trends, seasonal variations in demand and supply, and real-time port congestion information for both origin and destination ports. Furthermore, it must incorporate detailed infrastructure constraints of Indian East Coast ports, such as maximum LOA (Length Overall), beam, draft, and cargo handling rates, along with similar data for the loading ports in Australia, the US, Mozambique, and Indonesia.&lt;br&gt;&lt;br&gt; &lt;b&gt;Expected Solution:&lt;/b&gt;&lt;br&gt;&lt;br&gt; The expected solution is the development and implementation of an intelligent, datadriven Freight Forecasting Model. This model should leverage advanced analytical techniques, potentially including machine learning algorithms (e.g., time series forecasting, regression models) and artificial intelligence, to predict future freight rates with a high degree of accuracy for various vessel types and trade routes. The solution should offer actionable insights by providing recommendations on:&lt;br&gt;&lt;br&gt; a. Optimal Market Entry Timing: Identify ideal windows to secure short-term or mid-term vessel charter contracts for specific cargo requirements, minimizing freight costs.&lt;br&gt;&lt;br&gt; b. Vessel Type Optimization: Recommend the most suitable vessel type (e.g.,Handysize, Supramax, Panamax, Capesize) for a given cargo volume and origin-destination pair, considering all known port infrastructure limitations at both loading and discharge ports on India&#039;s East Coast. This includes factoring in draft restrictions, LOA, and cargo handling capabilities to prevent idle time and ensure efficient turnaround.&lt;br&gt;&lt;br&gt; c. Idle Scenario Management: Propose strategies for minimizing vessel idle time by forecasting periods of low demand and suggesting alternative employment opportunities or optimized positioning to reduce deadheading.&lt;br&gt;&lt;br&gt; d. Risk Mitigation: Provide early warnings for potential market volatility, port congestion, or other disruptions that could impact chartering decisions.&lt;br&gt;&lt;br&gt; The model should be user-friendly, perhaps with a dashboard interface, allowing logistics managers to input cargo details, origin/destination ports, and desired contract duration to receive comprehensive freight forecasts and actionable recommendations.The ultimate goal is to move from a reactive, daily market approach to a proactive, predictive chartering strategy, leading to significant cost reductions, improved supply chain efficiency, and enhanced decision-making capabilities.&lt;br&gt;&lt;br&gt; &lt;b&gt;Objective:&lt;/b&gt;&lt;br&gt;&lt;br&gt; Development of model to facilitate moving from multiple single spot contracts being entered into currently to short term / medium term multiple voyage contracts.</div> -->
+                                 <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> <b>Background:</b><br><br> The current approach to vessel chartering for bulk cargo procurement to India's East Coast ports often involves daily market exploration, leading to reactive decision-making and likely missed opportunities for cost savings and efficiency. The highly volatile nature of global freight markets, coupled with varying supply and demand dynamics from key origins like Australia, the US, Mozambique, Russia and Indonesia, makes it challenging to identify optimal entry points for short-term or mid-term charter contracts. Furthermore, without a robust future forecasting mechanism, determining the most suitable vessel type (e.g., Handysize, Supramax, Panamax,Capesize) for specific cargo parcels and routes, while accounting for port infrastructure limitations at both origin and destination, results in suboptimal utilization and increased idle time. This manual, market-dependent approach requires analytics to mitigate risks associated with freight fluctuations and port-specific constraints, directly impacting overall logistics costs and supply chain reliability. Detailed Description:<br><br> The problem statement addresses the critical need for a sophisticated freight forecasting model to revolutionize vessel chartering and bulk cargo procurement for East Coast Indian ports. Currently, our operations are heavily reliant on daily engagements with the freight market. This traditional method leads to several inefficiencies: a lack of predictive insight into future freight rates, making it difficult to secure favorable short-term or mid-term charter contracts; an inability to proactively identify the optimal time to enter the market for specific vessel types and cargo sizes; and significant challenges in minimizing vessel idle time due to inadequate planning regarding port-specific infrastructure restrictions.<br><br> For instance, procuring bulk cargo (such as coal) from Australia, the US,Mozambique, and Indonesia presents unique logistical challenges. Each origin-destination pair has distinct sailing distances, trade lane dynamics, and, crucially,varying port capabilities. East Coast Indian ports, like Paradip, Vizag, Gangavaram,Gopalpur, Dhamra, Sagar- Sandheads and Haldia, each possess specific draft restrictions, berthing limitations, and cargo handling capacities that dictate the maximum permissible vessel size and turnaround time.The proposed system should therefore integrate multiple data points for comprehensive analysis. This includes historical freight rate data for various vessel sizes across relevant trade routes, global economic indicators, commodity price trends, seasonal variations in demand and supply, and real-time port congestion information for both origin and destination ports. Furthermore, it must incorporate detailed infrastructure constraints of Indian East Coast ports, such as maximum LOA (Length Overall), beam, draft, and cargo handling rates, along with similar data for the loading ports in Australia, the US, Mozambique, and Indonesia.<br><br> <b>Expected Solution:</b><br><br> The expected solution is the development and implementation of an intelligent, datadriven Freight Forecasting Model. This model should leverage advanced analytical techniques, potentially including machine learning algorithms (e.g., time series forecasting, regression models) and artificial intelligence, to predict future freight rates with a high degree of accuracy for various vessel types and trade routes. The solution should offer actionable insights by providing recommendations on:<br><br> a. Optimal Market Entry Timing: Identify ideal windows to secure short-term or mid-term vessel charter contracts for specific cargo requirements, minimizing freight costs.<br><br> b. Vessel Type Optimization: Recommend the most suitable vessel type (e.g.,Handysize, Supramax, Panamax, Capesize) for a given cargo volume and origin-destination pair, considering all known port infrastructure limitations at both loading and discharge ports on India's East Coast. This includes factoring in draft restrictions, LOA, and cargo handling capabilities to prevent idle time and ensure efficient turnaround.<br><br> c. Idle Scenario Management: Propose strategies for minimizing vessel idle time by forecasting periods of low demand and suggesting alternative employment opportunities or optimized positioning to reduce deadheading.<br><br> d. Risk Mitigation: Provide early warnings for potential market volatility, port congestion, or other disruptions that could impact chartering decisions.<br><br> The model should be user-friendly, perhaps with a dashboard interface, allowing logistics managers to input cargo details, origin/destination ports, and desired contract duration to receive comprehensive freight forecasts and actionable recommendations.The ultimate goal is to move from a reactive, daily market approach to a proactive, predictive chartering strategy, leading to significant cost reductions, improved supply chain efficiency, and enhanced decision-making capabilities.<br><br> <b>Objective:</b><br><br> Development of model to facilitate moving from multiple single spot contracts being entered into currently to short term / medium term multiple voyage contracts.</div>
+                               </td>
+                            </tr>
+
+                            <tr>
+                                <th>Organization</th>
+                            <td>Ministry of Steel </td>
+                                            
+                            </tr>  
+                            
+                            <tr>
+                                <th>Department</th>
+                            <td>
+                                SAIL 
+                                <!-- echo $user_info->department;  -->
+                            </td>
+                                            
+                            </tr>  
+
+                            <tr>
+                            <th>Category</th>
+                            <td>Software</td>
+                            </tr>
+
+                            <tr>
+                            <th>Theme</th>
+                            <td>Transportation &amp; Logistics</td>
+                            </tr>
+                            <tr>
+                              <th>Youtube Link</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+                          <!--                             <tr>
+                              <th>Dataset Link</th>
+                              <td>
+                                
+                                    <br>
+                                     <a href=""><br></a>
+                                 <a href="https://www.sih.gov.in/dataset/"><br></a>
+                                                                                          </td>  
+                            </tr> -->
+                                                                <tr>
+                                    <th>Dataset Link</th>
+                                    <td>
+                                                                            </td>
+                                    </tr>
+
+                            <tr>
+                              <th>Contact info</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+    
+                      </thead>
+                     </table> 
+                </div>
+
+                </div>
+
+                </div>
+                </div>
+            </td>
+            
+            <td>Software</td>
+            <td>SIH26006</td>
+            <td>0/500</td>
+           
+            <td>Transportation &amp; Logistics</td>
+            <td>30 September 2026</td>
+
+            <!-- <td>30-09-2026</td> -->
+        </tr><tr role="row" class="odd">
+             <td class="colomn_border sorting_1">7</td>
+<!--<td></td>-->
+
+
+        <td class="colomn_border">Ministry of Steel</td>
+        <td class="colomn_border"><a style="font-size:15px ;margin-bottom: 4px !important; cursor: pointer" data-toggle="modal" data-target="#ViewProblemStatement26007">Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines.</a>
+            <div id="ViewProblemStatement26007" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Modal content-->
+             <div class="modal-content">
+                <div class="modal-header">                    
+                    <button type="button" class="close PSclose" data-dismiss="modal">×</button>                    
+					<div class="row">
+						<div class="col-md-6">
+							<div class="psLogoModal">
+								<img class="navbar-brand" src="/img1/SIH-Logo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="psTitleModalTop">
+								<h6 class="modal-title"> Problem Statement Details  </h6>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-body">
+                   
+                    <table id="settings" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement ID</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> 26007</div>
+                               </td>
+                            </tr>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement Title</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> Safe and Efficient Operation of Mine Vehicles in Fog and Low-Visibility Conditions in Open Cast Iron Ore Mines.</div>
+                               </td>
+                            </tr>
+                            <tr>
+                            <th style="vertical-align: top;">Description</th>
+                            <td>
+                                <!-- <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> &lt;b&gt;Background:&lt;/b&gt;&lt;br&gt;&lt;br&gt; NMDC Limited is Indiaâ€™s largest Iron Ore producer, currently producing approximately 53 Million Tonnes Per Annum (MTPA) from its three fully mechanized mining complexes, namely BIOM-Kirandul Complex, BIOM-Bacheli Complex in Chhattisgarh, and Donimalai Complex in Karnataka. The Bailadila Region alone contributes nearly 37 MTPA of Iron Ore production. In line with the National Steel Policy, NMDC has set a target of achieving 100 MT production capacity by 2030, with approximately 80 MT expected from the Bailadila Sector.&lt;br&gt;&lt;br&gt; The Bailadila mining region experiences severe monsoon conditions from June to October, including heavy rainfall, strong winds, high humidity, dense clouds, and thick fog. During this period, visibility on mine haul roads, particularly in hilltop mining areas, often reduces to as low as 3â€“5 meters. These conditions significantly affect the safe and efficient movement of Heavy Earth Moving Machinery (HEMM), especially dumpers engaged in ore transportation.&lt;br&gt;&lt;br&gt; &lt;b&gt;Problem Description:&lt;/b&gt;&lt;br&gt;&lt;br&gt; Dense fog and extremely low visibility during the monsoon season create major operational and safety challenges in the Bailadila iron ore mines. Poor visibility restricts dumper movement, forcing operators to reduce speed or temporarily halt operations to avoid accidents and unsafe conditions.This results in increased haul cycle times, reduced fleet productivity, lower ore evacuation, and production losses. The risk of vehicle collision, road accidents, and operational disruptions also increases substantially during such conditions. Existing visibility aids and operational controls have limited effectiveness in dense fog environments.There is a need for an intelligent, reliable, and technology-driven solution that can enable safe and efficient movement of mine vehicles under low-visibility conditions while ensuring continuity of operations and maintaining production levels. Expected Solution:&lt;br&gt;&lt;br&gt; The proposed solution should improve operator situational awareness, assist in vehicle guidance and collision avoidance, and support real-time monitoring and decision-making for safe haul road operations during adverse weather conditions.&lt;br&gt;&lt;br&gt; &lt;b&gt;The solution may leverage technologies such as:&lt;/b&gt;&lt;br&gt;&lt;br&gt; &amp;#8226; AI/ML-based analytics&lt;br&gt; &amp;#8226; Computer vision and thermal imaging&lt;br&gt; &amp;#8226; LiDAR and radar-based sensing&lt;br&gt; &amp;#8226; GPS/DGPS-based vehicle tracking&lt;br&gt; &amp;#8226; Vehicle-to-Vehicle (V2V) and Vehicle-to-Infrastructure (V2I) communication&lt;br&gt; &amp;#8226; Autonomous or driver-assistance systems&lt;br&gt; &amp;#8226; IoT-enabled monitoring systems&lt;br&gt; &amp;#8226; Centralized command and control platforms&lt;br&gt; &amp;#8226; Digital Twin-based operational monitoring Expected Outcomes&lt;br&gt; &amp;#8226; Improved safety of dumper operations during foggy conditions&lt;br&gt; &amp;#8226; Reduction in collision risks and operational accidents&lt;br&gt; &amp;#8226; Improved haulage efficiency and reduced cycle times&lt;br&gt; &amp;#8226; Enhanced fleet utilization and continuity of mining operations during monsoon&lt;br&gt; &amp;#8226; Reduction in production losses caused by low visibility&lt;br&gt; &amp;#8226; Real-time monitoring and decision support for operators and control rooms&lt;br&gt; &amp;#8226; Scalable and deployable solution for large-scale mechanized open cast mines&lt;br&gt;</div> -->
+                                 <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> <b>Background:</b><br><br> NMDC Limited is Indiaâ€™s largest Iron Ore producer, currently producing approximately 53 Million Tonnes Per Annum (MTPA) from its three fully mechanized mining complexes, namely BIOM-Kirandul Complex, BIOM-Bacheli Complex in Chhattisgarh, and Donimalai Complex in Karnataka. The Bailadila Region alone contributes nearly 37 MTPA of Iron Ore production. In line with the National Steel Policy, NMDC has set a target of achieving 100 MT production capacity by 2030, with approximately 80 MT expected from the Bailadila Sector.<br><br> The Bailadila mining region experiences severe monsoon conditions from June to October, including heavy rainfall, strong winds, high humidity, dense clouds, and thick fog. During this period, visibility on mine haul roads, particularly in hilltop mining areas, often reduces to as low as 3â€“5 meters. These conditions significantly affect the safe and efficient movement of Heavy Earth Moving Machinery (HEMM), especially dumpers engaged in ore transportation.<br><br> <b>Problem Description:</b><br><br> Dense fog and extremely low visibility during the monsoon season create major operational and safety challenges in the Bailadila iron ore mines. Poor visibility restricts dumper movement, forcing operators to reduce speed or temporarily halt operations to avoid accidents and unsafe conditions.This results in increased haul cycle times, reduced fleet productivity, lower ore evacuation, and production losses. The risk of vehicle collision, road accidents, and operational disruptions also increases substantially during such conditions. Existing visibility aids and operational controls have limited effectiveness in dense fog environments.There is a need for an intelligent, reliable, and technology-driven solution that can enable safe and efficient movement of mine vehicles under low-visibility conditions while ensuring continuity of operations and maintaining production levels. Expected Solution:<br><br> The proposed solution should improve operator situational awareness, assist in vehicle guidance and collision avoidance, and support real-time monitoring and decision-making for safe haul road operations during adverse weather conditions.<br><br> <b>The solution may leverage technologies such as:</b><br><br> • AI/ML-based analytics<br> • Computer vision and thermal imaging<br> • LiDAR and radar-based sensing<br> • GPS/DGPS-based vehicle tracking<br> • Vehicle-to-Vehicle (V2V) and Vehicle-to-Infrastructure (V2I) communication<br> • Autonomous or driver-assistance systems<br> • IoT-enabled monitoring systems<br> • Centralized command and control platforms<br> • Digital Twin-based operational monitoring Expected Outcomes<br> • Improved safety of dumper operations during foggy conditions<br> • Reduction in collision risks and operational accidents<br> • Improved haulage efficiency and reduced cycle times<br> • Enhanced fleet utilization and continuity of mining operations during monsoon<br> • Reduction in production losses caused by low visibility<br> • Real-time monitoring and decision support for operators and control rooms<br> • Scalable and deployable solution for large-scale mechanized open cast mines<br></div>
+                               </td>
+                            </tr>
+
+                            <tr>
+                                <th>Organization</th>
+                            <td>Ministry of Steel </td>
+                                            
+                            </tr>  
+                            
+                            <tr>
+                                <th>Department</th>
+                            <td>
+                                NMDC 
+                                <!-- echo $user_info->department;  -->
+                            </td>
+                                            
+                            </tr>  
+
+                            <tr>
+                            <th>Category</th>
+                            <td>Hardware</td>
+                            </tr>
+
+                            <tr>
+                            <th>Theme</th>
+                            <td>Smart Automation</td>
+                            </tr>
+                            <tr>
+                              <th>Youtube Link</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+                          <!--                             <tr>
+                              <th>Dataset Link</th>
+                              <td>
+                                
+                                    <br>
+                                     <a href=""><br></a>
+                                 <a href="https://www.sih.gov.in/dataset/"><br></a>
+                                                                                          </td>  
+                            </tr> -->
+                                                                <tr>
+                                    <th>Dataset Link</th>
+                                    <td>
+                                                                            </td>
+                                    </tr>
+
+                            <tr>
+                              <th>Contact info</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+    
+                      </thead>
+                     </table> 
+                </div>
+
+                </div>
+
+                </div>
+                </div>
+            </td>
+            
+            <td>Hardware</td>
+            <td>SIH26007</td>
+            <td>1/500</td>
+           
+            <td>Smart Automation</td>
+            <td>30 September 2026</td>
+
+            <!-- <td>30-09-2026</td> -->
+        </tr><tr role="row" class="even">
+             <td class="colomn_border sorting_1">8</td>
+<!--<td></td>-->
+
+
+        <td class="colomn_border">Ministry of Steel</td>
+        <td class="colomn_border"><a style="font-size:15px ;margin-bottom: 4px !important; cursor: pointer" data-toggle="modal" data-target="#ViewProblemStatement26008">Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Intelligent Monitoring and Prediction of Conveyor Belt Joint Rupture and Damages in Iron Ore Mining Industry.</a>
+            <div id="ViewProblemStatement26008" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Modal content-->
+             <div class="modal-content">
+                <div class="modal-header">                    
+                    <button type="button" class="close PSclose" data-dismiss="modal">×</button>                    
+					<div class="row">
+						<div class="col-md-6">
+							<div class="psLogoModal">
+								<img class="navbar-brand" src="/img1/SIH-Logo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="psTitleModalTop">
+								<h6 class="modal-title"> Problem Statement Details  </h6>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-body">
+                   
+                    <table id="settings" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement ID</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> 26008</div>
+                               </td>
+                            </tr>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement Title</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> Belt Joint Rupture and Conveyor Belt Damages in Iron Ore Mining Industry: Intelligent Monitoring and Prediction of Conveyor Belt Joint Rupture and Damages in Iron Ore Mining Industry.</div>
+                               </td>
+                            </tr>
+                            <tr>
+                            <th style="vertical-align: top;">Description</th>
+                            <td>
+                                <!-- <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> &lt;b&gt;Background:&lt;/b&gt;&lt;br&gt;&lt;br&gt; In the iron ore mining industry, conveyor belt systems are the backbone of material transportation, enabling continuous movement of iron ore from mining faces to crushing, screening, stockyard, and dispatch areas. One of the major operational challenges is conveyor belt joint rupture and belt damage, as belt joints are highly vulnerable to failure due to excessive tension,misalignment, wear, overloading, and maintenance deficiencies. Unexpected belt failures can cause production downtime, safety risks, high maintenance costs, delays in ore transportation, and damage to associated equipment.Traditional maintenance practices are mostly reactive or schedule based, which often fail to detect early-stage degradation of conveyor belts and joints. As mining operations increasingly move toward Industry 4.0 and smart mining, there is a growing need for intelligent, real-time, predictive systems that can proactively identify belt health deterioration and prevent catastrophic failures. Detailed Description:&lt;br&gt;&lt;br&gt; Conveyor belt joints in iron ore mines are continuously exposed to heavy loads, high tension, dust, moisture, and frequent start-stop operations. These harsh working conditions gradually damage the belt joints and conveyor belt through cracks, wear, edge damage, rubber weakening, and splice failure. If these issues are not detected early, they can lead to sudden belt rupture and major operational breakdowns.&lt;br&gt;&lt;br&gt; Mostly inspections are done manually and only at fixed intervals, making it difficult to identify early signs of failure. In normal practices, maintenance is mostly reactive, meaning repairs are performed only after visible damage or breakdown occurs. This results in unexpected shutdowns, emergency repairs, and increased maintenance costs. The major impacts on mining operations are as below:&lt;br&gt;&lt;br&gt; &amp;#8226; Production- Loss of ore transportation capacity&lt;br&gt; &amp;#8226; Maintenance- Increased repair and spare cost&lt;br&gt; &amp;#8226; Safety- Risk of accidents during belt rupture&lt;br&gt; &amp;#8226; Energy- Higher power consumption due to misalignment &amp;amp; friction&lt;br&gt; &amp;#8226; Asset Life- Reduced conveyor and pulley lifespan&lt;br&gt; &amp;#8226; Sustainability- Material spillage and wastage Therefore, belt joint rupture and conveyor belt damage remain major operational and financial challenges in iron ore mining industries. Conventional maintenance approaches are insufficient for ensuring high conveyor reliability in modern mining operations.&lt;br&gt;&lt;br&gt; Expected Solution: To develop an Intelligent Conveyor Belt Health Monitoring and Predictive Maintenance System using digitalization, IoT, AI, and machine learning technologies to detect early signs of belt joint deterioration and damages.&lt;br&gt;&lt;br&gt; &lt;b&gt;The proposed digitalized system architecture may include the following:&lt;/b&gt;&lt;br&gt;&lt;br&gt; 1. IoT-Based Sensor Integration for real-time monitoring using vibration, temperature, belt tracking, acoustic, load, speed, and tension sensors.&lt;br&gt;&lt;br&gt; 2. AI-Based Vision Monitoring using smart cameras and thermal imaging systems to detect cracks, tears, overheating, misalignment, and abnormal belt conditions.&lt;br&gt;&lt;br&gt; 3. Drone and Camera-Based Inspection Systems.&lt;br&gt;&lt;br&gt; 4. Digital Twin of Conveyor System to simulate conveyor operations, monitor equipment health, and analyse behaviour in real time.&lt;br&gt;&lt;br&gt; 5. Integration with Existing SCADA, PLC, and other pre-existed Conveyor Monitoring Systems.&lt;br&gt;&lt;br&gt; 6. AI/ML-Based Predictive Analytics 7. Others The proposed solution aims to reduce unplanned downtime, improve safety, minimize maintenance costs, and enhance conveyor reliability and operational efficiency in iron ore mining industries.</div> -->
+                                 <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> <b>Background:</b><br><br> In the iron ore mining industry, conveyor belt systems are the backbone of material transportation, enabling continuous movement of iron ore from mining faces to crushing, screening, stockyard, and dispatch areas. One of the major operational challenges is conveyor belt joint rupture and belt damage, as belt joints are highly vulnerable to failure due to excessive tension,misalignment, wear, overloading, and maintenance deficiencies. Unexpected belt failures can cause production downtime, safety risks, high maintenance costs, delays in ore transportation, and damage to associated equipment.Traditional maintenance practices are mostly reactive or schedule based, which often fail to detect early-stage degradation of conveyor belts and joints. As mining operations increasingly move toward Industry 4.0 and smart mining, there is a growing need for intelligent, real-time, predictive systems that can proactively identify belt health deterioration and prevent catastrophic failures. Detailed Description:<br><br> Conveyor belt joints in iron ore mines are continuously exposed to heavy loads, high tension, dust, moisture, and frequent start-stop operations. These harsh working conditions gradually damage the belt joints and conveyor belt through cracks, wear, edge damage, rubber weakening, and splice failure. If these issues are not detected early, they can lead to sudden belt rupture and major operational breakdowns.<br><br> Mostly inspections are done manually and only at fixed intervals, making it difficult to identify early signs of failure. In normal practices, maintenance is mostly reactive, meaning repairs are performed only after visible damage or breakdown occurs. This results in unexpected shutdowns, emergency repairs, and increased maintenance costs. The major impacts on mining operations are as below:<br><br> • Production- Loss of ore transportation capacity<br> • Maintenance- Increased repair and spare cost<br> • Safety- Risk of accidents during belt rupture<br> • Energy- Higher power consumption due to misalignment &amp; friction<br> • Asset Life- Reduced conveyor and pulley lifespan<br> • Sustainability- Material spillage and wastage Therefore, belt joint rupture and conveyor belt damage remain major operational and financial challenges in iron ore mining industries. Conventional maintenance approaches are insufficient for ensuring high conveyor reliability in modern mining operations.<br><br> Expected Solution: To develop an Intelligent Conveyor Belt Health Monitoring and Predictive Maintenance System using digitalization, IoT, AI, and machine learning technologies to detect early signs of belt joint deterioration and damages.<br><br> <b>The proposed digitalized system architecture may include the following:</b><br><br> 1. IoT-Based Sensor Integration for real-time monitoring using vibration, temperature, belt tracking, acoustic, load, speed, and tension sensors.<br><br> 2. AI-Based Vision Monitoring using smart cameras and thermal imaging systems to detect cracks, tears, overheating, misalignment, and abnormal belt conditions.<br><br> 3. Drone and Camera-Based Inspection Systems.<br><br> 4. Digital Twin of Conveyor System to simulate conveyor operations, monitor equipment health, and analyse behaviour in real time.<br><br> 5. Integration with Existing SCADA, PLC, and other pre-existed Conveyor Monitoring Systems.<br><br> 6. AI/ML-Based Predictive Analytics 7. Others The proposed solution aims to reduce unplanned downtime, improve safety, minimize maintenance costs, and enhance conveyor reliability and operational efficiency in iron ore mining industries.</div>
+                               </td>
+                            </tr>
+
+                            <tr>
+                                <th>Organization</th>
+                            <td>Ministry of Steel </td>
+                                            
+                            </tr>  
+                            
+                            <tr>
+                                <th>Department</th>
+                            <td>
+                                NMDC 
+                                <!-- echo $user_info->department;  -->
+                            </td>
+                                            
+                            </tr>  
+
+                            <tr>
+                            <th>Category</th>
+                            <td>Hardware</td>
+                            </tr>
+
+                            <tr>
+                            <th>Theme</th>
+                            <td>Smart Automation</td>
+                            </tr>
+                            <tr>
+                              <th>Youtube Link</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+                          <!--                             <tr>
+                              <th>Dataset Link</th>
+                              <td>
+                                
+                                    <br>
+                                     <a href=""><br></a>
+                                 <a href="https://www.sih.gov.in/dataset/"><br></a>
+                                                                                          </td>  
+                            </tr> -->
+                                                                <tr>
+                                    <th>Dataset Link</th>
+                                    <td>
+                                                                            </td>
+                                    </tr>
+
+                            <tr>
+                              <th>Contact info</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+    
+                      </thead>
+                     </table> 
+                </div>
+
+                </div>
+
+                </div>
+                </div>
+            </td>
+            
+            <td>Hardware</td>
+            <td>SIH26008</td>
+            <td>1/500</td>
+           
+            <td>Smart Automation</td>
+            <td>30 September 2026</td>
+
+            <!-- <td>30-09-2026</td> -->
+        </tr><tr role="row" class="odd">
+             <td class="colomn_border sorting_1">9</td>
+<!--<td></td>-->
+
+
+        <td class="colomn_border">Ministry of Steel</td>
+        <td class="colomn_border"><a style="font-size:15px ;margin-bottom: 4px !important; cursor: pointer" data-toggle="modal" data-target="#ViewProblemStatement26009">Using AI/ML and Space Technology to Identify Manganese Reserves and Overcome Production Shortfalls.</a>
+            <div id="ViewProblemStatement26009" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Modal content-->
+             <div class="modal-content">
+                <div class="modal-header">                    
+                    <button type="button" class="close PSclose" data-dismiss="modal">×</button>                    
+					<div class="row">
+						<div class="col-md-6">
+							<div class="psLogoModal">
+								<img class="navbar-brand" src="/img1/SIH-Logo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="psTitleModalTop">
+								<h6 class="modal-title"> Problem Statement Details  </h6>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-body">
+                   
+                    <table id="settings" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement ID</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> 26009</div>
+                               </td>
+                            </tr>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement Title</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> Using AI/ML and Space Technology to Identify Manganese Reserves and Overcome Production Shortfalls.</div>
+                               </td>
+                            </tr>
+                            <tr>
+                            <th style="vertical-align: top;">Description</th>
+                            <td>
+                                <!-- <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> Background: MOIL Limited is the largest producer of Manganese Ore in India. To meet future demand, it is important to accurately identify available reserves and avoid production shortfalls. At present, reserve estimation and production planning are mainly based on manual surveys, drilling results, and production records. These methods are time-consuming and sometimes lead to a mismatch between expected and actual ore production. Detailed Description: The challenge is to develop an AI/ML-based solution that uses geological data,historical production, equipment performance, and satellite/space technology inputs (such as rainfall, soil moisture, vegetation index, and land temperature) to:&lt;br&gt;&lt;br&gt; &amp;#8226; Identify and map manganese reserves more accurately using surface and sub-surface indicators.&lt;br&gt; &amp;#8226; Predict shortfalls in production by analysing constraints like equipment downtime, weather conditions, or blasting delays.&lt;br&gt; &amp;#8226; Suggest corrective actions such as adjusting mine schedules, optimizing blasting, or re-deploying equipment to ensure continuous ore availability. Expected Solution: The expected solution is a user-friendly dashboard that shows predicted reserves, production trends, possible risks of shortfall, and recommended corrective steps.&lt;br&gt;&lt;br&gt; This will help MOIL improve planning, reduce losses, and ensure steady ore supply to customers.</div> -->
+                                 <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> Background: MOIL Limited is the largest producer of Manganese Ore in India. To meet future demand, it is important to accurately identify available reserves and avoid production shortfalls. At present, reserve estimation and production planning are mainly based on manual surveys, drilling results, and production records. These methods are time-consuming and sometimes lead to a mismatch between expected and actual ore production. Detailed Description: The challenge is to develop an AI/ML-based solution that uses geological data,historical production, equipment performance, and satellite/space technology inputs (such as rainfall, soil moisture, vegetation index, and land temperature) to:<br><br> • Identify and map manganese reserves more accurately using surface and sub-surface indicators.<br> • Predict shortfalls in production by analysing constraints like equipment downtime, weather conditions, or blasting delays.<br> • Suggest corrective actions such as adjusting mine schedules, optimizing blasting, or re-deploying equipment to ensure continuous ore availability. Expected Solution: The expected solution is a user-friendly dashboard that shows predicted reserves, production trends, possible risks of shortfall, and recommended corrective steps.<br><br> This will help MOIL improve planning, reduce losses, and ensure steady ore supply to customers.</div>
+                               </td>
+                            </tr>
+
+                            <tr>
+                                <th>Organization</th>
+                            <td>Ministry of Steel </td>
+                                            
+                            </tr>  
+                            
+                            <tr>
+                                <th>Department</th>
+                            <td>
+                                MOIL Ltd. 
+                                <!-- echo $user_info->department;  -->
+                            </td>
+                                            
+                            </tr>  
+
+                            <tr>
+                            <th>Category</th>
+                            <td>Software</td>
+                            </tr>
+
+                            <tr>
+                            <th>Theme</th>
+                            <td>Space Technology</td>
+                            </tr>
+                            <tr>
+                              <th>Youtube Link</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+                          <!--                             <tr>
+                              <th>Dataset Link</th>
+                              <td>
+                                
+                                    <br>
+                                     <a href=""><br></a>
+                                 <a href="https://www.sih.gov.in/dataset/"><br></a>
+                                                                                          </td>  
+                            </tr> -->
+                                                                <tr>
+                                    <th>Dataset Link</th>
+                                    <td>
+                                                                            </td>
+                                    </tr>
+
+                            <tr>
+                              <th>Contact info</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+    
+                      </thead>
+                     </table> 
+                </div>
+
+                </div>
+
+                </div>
+                </div>
+            </td>
+            
+            <td>Software</td>
+            <td>SIH26009</td>
+            <td>0/500</td>
+           
+            <td>Space Technology</td>
+            <td>30 September 2026</td>
+
+            <!-- <td>30-09-2026</td> -->
+        </tr><tr role="row" class="even">
+             <td class="colomn_border sorting_1">10</td>
+<!--<td></td>-->
+
+
+        <td class="colomn_border">Ministry of Rural Development</td>
+        <td class="colomn_border"><a style="font-size:15px ;margin-bottom: 4px !important; cursor: pointer" data-toggle="modal" data-target="#ViewProblemStatement26010">Survey/Resurvey of Rural Agricultural Land in lndia</a>
+            <div id="ViewProblemStatement26010" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                <!-- Modal content-->
+             <div class="modal-content">
+                <div class="modal-header">                    
+                    <button type="button" class="close PSclose" data-dismiss="modal">×</button>                    
+					<div class="row">
+						<div class="col-md-6">
+							<div class="psLogoModal">
+								<img class="navbar-brand" src="/img1/SIH-Logo.png">
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="psTitleModalTop">
+								<h6 class="modal-title"> Problem Statement Details  </h6>
+							</div>
+						</div>
+					</div>
+                </div>
+                <div class="modal-body">
+                   
+                    <table id="settings" class="table table-bordered table-hover">
+                        <thead>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement ID</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> 26010</div>
+                               </td>
+                            </tr>
+                        <tr>
+                            <th style="vertical-align: top;">Problem Statement Title</th>
+                            <td>
+                                <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> Survey/Resurvey of Rural Agricultural Land in lndia</div>
+                               </td>
+                            </tr>
+                            <tr>
+                            <th style="vertical-align: top;">Description</th>
+                            <td>
+                                <!-- <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> Background: Historically, land surveys in rural lndia were conducted using conventional chain and tape methods, many of which date back several decades or even the colonial period. Over time, multiple issues emerged such as Boundary changes due to inheritance and informal partition, Unrecorded land transactions, Encroachments and overlapping claims, Errors in cadastral maps, Mismatch between textual records and spatial maps, Absence of updated mutation records and inconsistent land classifications. These deficiencies have resulted in prolonged legal disputes, reduced agricultural productivity, and administrative inefficiencies. Land-related disputes reportedly account for a major share of civil litigation in lndia. Detailed Description: A comprehensive survey/resurvey program is necessary to establish accurate land ownership, Update cadastral maps, Reduce land disputes,Enable transparent land governance, Support precision agriculture, lmprove rural planning, Facilitate digital land administration and Ensure effective implementation of government schemes.Modern technologies such as Drone mapping, Differential GPS (DGPS), GIS platforms, Satellite imagery, CORS, Mobile-based field verification can significanfly improve accuracy, speed, and transparency in rural land management.&lt;br&gt;&lt;br&gt; Expected Solution: Technology-Driven Land Survey and Resurvey be implemented using modern survey technologies for accurate mapping of agricultural land parcels such as Drone-based aerial surveys, Real-Time Kinematic (RTK) GPS and DGPS systems, GIS-enabled cadastral mapping and Geo-referenced parcel identification. Developing a unified digital land information system integrating Record of Rights(RoR), Mutation records, Registration databases, Survey maps, Ownership history,precise Geo-coordinates of land parcels. This integration should enable real-time updating and verification of land ownership.</div> -->
+                                 <div class="style-2" style="overflow-y: auto; min-height:20px; max-height: 200px; width:100%;"> Background: Historically, land surveys in rural lndia were conducted using conventional chain and tape methods, many of which date back several decades or even the colonial period. Over time, multiple issues emerged such as Boundary changes due to inheritance and informal partition, Unrecorded land transactions, Encroachments and overlapping claims, Errors in cadastral maps, Mismatch between textual records and spatial maps, Absence of updated mutation records and inconsistent land classifications. These deficiencies have resulted in prolonged legal disputes, reduced agricultural productivity, and administrative inefficiencies. Land-related disputes reportedly account for a major share of civil litigation in lndia. Detailed Description: A comprehensive survey/resurvey program is necessary to establish accurate land ownership, Update cadastral maps, Reduce land disputes,Enable transparent land governance, Support precision agriculture, lmprove rural planning, Facilitate digital land administration and Ensure effective implementation of government schemes.Modern technologies such as Drone mapping, Differential GPS (DGPS), GIS platforms, Satellite imagery, CORS, Mobile-based field verification can significanfly improve accuracy, speed, and transparency in rural land management.<br><br> Expected Solution: Technology-Driven Land Survey and Resurvey be implemented using modern survey technologies for accurate mapping of agricultural land parcels such as Drone-based aerial surveys, Real-Time Kinematic (RTK) GPS and DGPS systems, GIS-enabled cadastral mapping and Geo-referenced parcel identification. Developing a unified digital land information system integrating Record of Rights(RoR), Mutation records, Registration databases, Survey maps, Ownership history,precise Geo-coordinates of land parcels. This integration should enable real-time updating and verification of land ownership.</div>
+                               </td>
+                            </tr>
+
+                            <tr>
+                                <th>Organization</th>
+                            <td>Ministry of Rural Development </td>
+                                            
+                            </tr>  
+                            
+                            <tr>
+                                <th>Department</th>
+                            <td>
+                                Dept of land resources (DoLR) 
+                                <!-- echo $user_info->department;  -->
+                            </td>
+                                            
+                            </tr>  
+
+                            <tr>
+                            <th>Category</th>
+                            <td>Hardware</td>
+                            </tr>
+
+                            <tr>
+                            <th>Theme</th>
+                            <td>Agriculture, FoodTech &amp; Rural Development</td>
+                            </tr>
+                            <tr>
+                              <th>Youtube Link</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+                          <!--                             <tr>
+                              <th>Dataset Link</th>
+                              <td>
+                                
+                                    <br>
+                                     <a href=""><br></a>
+                                 <a href="https://www.sih.gov.in/dataset/"><br></a>
+                                                                                          </td>  
+                            </tr> -->
+                                                                <tr>
+                                    <th>Dataset Link</th>
+                                    <td>
+                                                                            </td>
+                                    </tr>
+
+                            <tr>
+                              <th>Contact info</th>
+                              <td>
+                                    <a href=" " target="_blank"> </a>
+                            </td>  
+                            </tr> 
+    
+                      </thead>
+                     </table> 
+                </div>
+
+                </div>
+
+                </div>
+                </div>
+            </td>
+            
+            <td>Hardware</td>
+            <td>SIH26010</td>
+            <td>1/500</td>
+           
+            <td>Agriculture, FoodTech &amp; Rural Development</td>
+            <td>30 September 2026</td>
+
+            <!-- <td>30-09-2026</td> -->
+        </tr></tbody>
+    <!-- <tfoot>
+        <tr> 
+            <th class="sortingBottom">Logo</th>
+
+		<th class="sortingBottom">S.No.</th>
+         <th class="sortingBottom">Organization</th>
+		
+            <th class="sortingBottom">Problem Statement Title</th>
+            <th class="sortingBottom">Category</th>
+            <th class="sortingBottom">PS Number</th>
+            <th class="sortingBottom">Submitted Idea(s) Count</th>
+            <th class="sortingBottom">Theme</th>
+        </tr>
+    </tfoot> -->
+</table></div></div><div class="row"><div class="col-sm-12 col-md-5"></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="dataTablePS_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="dataTablePS_previous"><a href="#" aria-controls="dataTablePS" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="dataTablePS" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="dataTablePS" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="dataTablePS" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="dataTablePS" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="dataTablePS" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item disabled" id="dataTablePS_ellipsis"><a href="#" aria-controls="dataTablePS" data-dt-idx="6" tabindex="0" class="page-link">…</a></li><li class="paginate_button page-item "><a href="#" aria-controls="dataTablePS" data-dt-idx="7" tabindex="0" class="page-link">24</a></li><li class="paginate_button page-item next" id="dataTablePS_next"><a href="#" aria-controls="dataTablePS" data-dt-idx="8" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>  
+
+</div>
+    
+</div></section>
+
+
+
+
+<script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    $('#dataTablePS').DataTable({
+		"bInfo" : false
+	});
+});
+</script>
+
+<script>  
+$(document).ready( function () {
+    $('#table_id').dataTable( {
+    "pageLength": 100,
+    "order": [[ 5, "asc" ]],
+            "paging": false
+    });
+});
+
+
+</script>
+
+
+    <footer style="padding-top:30px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+				      <div class="follow-box">
+                   <h3>Follow Us</h3>
+                   <ul class="follow-box-copyright">
+                       <li><a href="https://www.facebook.com/mhrdInnovation/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                       <li><a href="https://www.instagram.com/mhrd.innovationcell/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                       <li><a href="https://x.com/SIH2025" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                       <li><a href="https://in.linkedin.com/company/moe-innovation-cell" target="_blank"><i class="fa fa fa-linkedin"></i></a></li>
+                   </ul>
+                <p style="margin-top: 15px;">© 2025-26 Smart India Hackathon. All rights reserved</p>
+               </div>				
+            </div>
+            <div class="col-md-6">
+                <div class="follow-box flo-box">
+                    <h3>Contact Us</h3>
+                    <ul class="follow-box-contact">
+                      <li>
+                          <i class="fa fa-envelope"></i> 
+                          For any queries write to: <a href="mailto:sih@aicte-india.org">sih@aicte-india.org </a>&nbsp;
+                          <!-- <a href="mailto:hackathon@aicte-india.org">hackathon@aicte-india.org</a> -->
+                        </li>
+                        <li>
+                          <i class="fa fa-phone" aria-hidden="true"></i>
+                           <a href="tel:+91  11 29581222">011 29581222, </a>&nbsp;
+                           <a href="tel:+91 11 29581223">011 29581223, </a>&nbsp;
+                           <a href="tel:+91 11 29581240">011 29581239, </a>&nbsp;
+                           <a href="tel:+91 11 29581240">011 29581240, </a>&nbsp;
+                          <a href="tel:+91 11 29581241">011 29581241, </a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <a href="tel:+91 11 29581319">011 29581319. </a> 
+
+                          <!-- <a href="tel:+91 11 29581235">+91 11 29581235 </a> -->
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="Registeration_type_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Select Registration Type</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="logo-modal">
+                    <img src="/img/logo.png" class="img-responsive" alt="Logo">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="content-modal">
+
+		<div class="form-group">
+                        <input style="transform:scale(1.3);" type="radio" name="User_Register_Type" value="igottwo" onclick="SendUserToItsPage(2)">
+                        <span class="sign_up_type" style="color:#03132E">College Faculty SPOC</span>
+                    </div>
+
+		<div class="form-group">
+                        <input style="transform:scale(1.3);" type="radio" name="User_Register_Type" value="igottwo" onclick="SendUserToItsPage(6)">
+                        <span class="sign_up_type" style="color:#03132E">School Faculty SPOC</span>
+                    </div>
+
+
+                    <div class="form-group" style="display: none;">
+                        <input style="transform:scale(1.3);" type="radio" name="User_Register_Type" value="igottwo" onclick="SendUserToItsPage(2)">
+                        <span class="sign_up_type" style="color:#03132E">College Faculty SPOC</span>
+                    </div>
+                    <div id="div1" style="display: none;">
+                            <input style="transform:scale(1.3);" type="radio" value="2" name="User_Register_Type" onclick="SendUserToItsPage(2)">
+                            <span class="sign_up_type" style="color:orange;">Existing Users</span> &nbsp;
+                            <input style="transform:scale(1.3);" type="radio" value="2" name="User_Register_Type" onclick="SendUserToItsPage(2)">
+                            <span class="sign_up_type" style="color:orange;">New Users</span><br>
+                            <span class="" style="color:red; font-size: 12px;">(*Please check your mail for OTP Verification)</span>
+                        </div>
+                    <div class="form-group" style="display:none;">
+                        <input style="transform:scale(1.3);" type="radio" name="User_Register_Type" value="4" onclick="SendUserToItsPage(4)">
+                        <span class="sign_up_type" style="color:#03132E">Design Mentors</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="modClose" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<a id="button"></a>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/bootnavbar.js"></script>
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script type="text/javascript" src="/js/bs_leftnavi.js"></script>
+    <script type="text/javascript" src="/js/script-mobile-menu.js"></script>
+	
+
+    
+<script>
+        $(function () {
+            $('#main_navbar').bootnavbar();
+        })
+</script>
+
+<script type="text/javascript">
+
+function show2()
+{ 
+    $('#div1').css('display', 'block');
+}
+
+function SendUserToItsPage(input)
+{
+  switch (input) {
+    case 1:
+    window.open("https://sih.gov.in/signup","_self");
+    break;
+
+    case 2:
+    window.open("https://sih.gov.in/collegeRegistration","_self");
+    break;
+
+
+    case 3:
+    window.open("https://sih.gov.in/studentRegistration","_self");
+     break;
+
+    case 4:
+    window.open("https://sih.gov.in/designmregistration","_self");
+     break;
+     
+    case 5:
+    window.open("https://sih.gov.in/juryregistration","_self");
+     break;  
+
+	case 6:
+    window.location.href = "https://junior.sih.gov.in/";
+    //window.open("https://sih.gov.in/schoolRegistration","_self");
+    break; 
+  }
+}
+
+jQuery(document).ready(function($) {
+      $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+        responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+           breakpoint: 400,
+           settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+           }
+        }]
+    });
+});
+
+jQuery(document).ready(function($) {
+      $('.sliderIndex').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+		prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+        responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+           breakpoint: 400,
+           settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+           }
+        }]
+    });
+});
+
+jQuery(document).ready(function($) {
+      $('.ministryDetails').slick({
+        dots: false,
+        infinite: true,
+        speed: 200,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+		prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+        responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+           breakpoint: 400,
+           settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+           }
+        }]
+    });
+});
+
+jQuery(document).ready(function($) {
+      $('.slider1').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+		prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+        responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+           breakpoint: 400,
+           settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+           }
+        }]
+    });
+});
+
+jQuery(document).ready(function($) {
+      $('.slider2').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+		prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+        responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+           breakpoint: 400,
+           settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+           }
+        }]
+    });
+});
+
+jQuery(document).ready(function($) {
+      $('.videoPrototypesSlide').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+		prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+        responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+           breakpoint: 400,
+           settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+           }
+        }]
+    });
+});
+
+        $(document).on("scroll", function(){
+                if
+              ($(document).scrollTop() > 86){
+                  $("#banner").addClass("shrink");
+                }
+                else
+                {
+                    $("#banner").removeClass("shrink");
+                }
+            });
+			
+			/* stop header code start */
+			
+			$(window).scroll(function () {
+			  console.log($(window).scrollTop())
+			  if ($(window).scrollTop() > 63) {
+				$('.navbar').addClass('navbar-fixed');
+			  }
+			  if ($(window).scrollTop() < 64) {
+				$('.navbar').removeClass('navbar-fixed');
+			  }
+			});
+			
+			/* stop header code end */
+			
+			/* slider add class code start */
+			
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 50) {
+				   $('#demo').addClass('carouselPadding');
+           $('#scrollnav').css({display:'block'});
+           $('.sihlogo').css({display:'block'});
+				} else {
+				   $('#demo').removeClass('carouselPadding');
+           $('#scrollnav').css({display:'none'});
+           $('.sihlogo').css({display:'none'});
+				}
+			});
+			
+			/* slider add class code end */
+
+        var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+jQuery(document).ready(function($) {
+      $('.twitterSlider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-long-arrow-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-long-arrow-right' aria-hidden='true'></i></button>",
+        responsive: [{
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        },
+        {
+           breakpoint: 400,
+           settings: {
+              arrows: false,
+              slidesToShow: 1,
+              slidesToScroll: 1
+           }
+        }]
+    });
+});
+
+$(function () {
+         $(".like").click(function () {
+             var input = $(this).find('.qty1');
+             input.val(parseInt(input.val())+ 1);
+    
+         });
+     $(".dislike").click(function () {
+         var input = $(this).find('.qty2');
+         input.val(input.val() - 1);
+     });
+  });
+  
+  $('.autoplay').slick({
+          slidesToShow: 3,
+          infinite: true,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+           responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+        });
+		
+  $(document).ready(function() {
+    $(".testimonial-carousel").slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      arrows: true,
+      prevArrow: $(".testimonial-carousel-controls .prev"),
+      nextArrow: $(".testimonial-carousel-controls .next")
+    });
+  });
+		
+</script>
+
+
+
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+<script>
+  var plat = window.navigator.platform;
+  var flag = '';
+  switch(plat) {
+    case 'Win32':
+                flag = "windows system 32";
+                break;
+        default:
+                flag = "default system";
+
+  }
+</script>
+
+
+</body></html>

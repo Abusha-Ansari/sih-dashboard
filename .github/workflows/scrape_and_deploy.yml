@@ -1,0 +1,50 @@
+name: SIH Scraper & Auto-Sync
+
+on:
+  schedule:
+    # Runs automatically every hour (or adjust as needed)
+    - cron: '0 * * * *'
+  workflow_dispatch: # Allows manual run anytime from GitHub UI
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  scrape-and-sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          playwright install chromium --with-deps
+
+      - name: Run Scraping & Data Extraction Pipeline
+        run: |
+          python run_pipeline.py
+
+      - name: Commit and push changes (triggers Vercel deploy)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add sih2026_data.json sih2026PS.html dashboard.html index.html
+          if git diff --staged --quiet; then
+            echo "No changes detected in SIH dataset."
+          else
+            git commit -m "chore(auto-update): sync SIH 2026 dataset"
+            git push
+          fi
