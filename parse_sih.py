@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """
-SIH 2026 HTML Data Parser & Analytics Generator
+SIH 2026 HTML Data Parser & Analytics Generator (with Non-Destructive Upsert)
 
 1. Reads 'sih2026PS.html'
-2. Extracts problem statements, modal contents, and top summary statistics
-3. Computes statistical distributions (by Category, Theme, Organization, Submissions)
-4. Saves data to 'sih2026_data.json'
-5. Updates/syncs embedded dataset in 'dashboard.html'
+2. Extracts problem statements, modal contents, and summary metrics
+3. Performs non-destructive upsert (never deletes known statements if a partial HTML is parsed)
+4. Computes full statistical distributions
+5. Saves to 'sih2026_data.json' and syncs embedded dataset in 'dashboard.html' and 'index.html'
 """
 
 import re
@@ -19,6 +19,7 @@ from bs4 import BeautifulSoup
 HTML_FILE = Path("sih2026PS.html")
 OUTPUT_JSON_FILE = Path("sih2026_data.json")
 DASHBOARD_HTML_FILE = Path("dashboard.html")
+INDEX_HTML_FILE = Path("index.html")
 
 
 def clean_text(text: str) -> str:
@@ -90,37 +91,55 @@ def parse_submissions(sub_str: str) -> dict:
     }
 
 
-def update_dashboard_embedded_data(json_payload: dict, dashboard_path: Path = DASHBOARD_HTML_FILE):
-    """Sync json data directly into dashboard.html so it can be opened via double-click / file:// protocol without CORS restrictions."""
+def update_dashboard_embedded_data(json_payload: dict, dashboard_path: Path):
+    """Sync json data directly into HTML files for standalone viewing."""
     if not dashboard_path.exists():
         return
 
     html_content = dashboard_path.read_text(encoding="utf-8")
     json_str = json.dumps(json_payload, ensure_ascii=False)
     
-    # Check if placeholder script exists
     pattern = r'(<script id="sihDataPayload" type="application/json">)(.*?)(</script>)'
     if re.search(pattern, html_content, flags=re.DOTALL):
         updated_html = re.sub(pattern, rf'\g<1>{json_str}\g<3>', html_content, flags=re.DOTALL)
         dashboard_path.write_text(updated_html, encoding="utf-8")
-        print(f"[OK] Synced embedded data to '{dashboard_path.resolve()}'.")
+        print(f"[OK] Synced embedded data to '{dashboard_path.name}'.")
 
 
 def parse_html_to_json(html_path: Path = HTML_FILE, json_path: Path = OUTPUT_JSON_FILE) -> dict:
     if not html_path.exists():
         raise FileNotFoundError(f"HTML source file '{html_path}' does not exist.")
 
+    # Load existing JSON database if present for non-destructive upsert
+    existing_items_map = {}
+    existing_portal_overview = {}
+    if json_path.exists():
+        try:
+            with open(json_path, "r", encoding="utf-8") as f:
+                old_data = json.load(f)
+                existing_portal_overview = old_data.get("portal_overview", {})
+                for item in old_data.get("problem_statements", []):
+                    key = item.get("ps_number") or str(item.get("ps_id")) or item.get("title")
+                    if key:
+                        existing_items_map[key] = item
+        except Exception as e:
+            print(f"[WARN] Could not read existing JSON for upsert: {e}")
+
     print(f"Reading '{html_path}'...")
     with open(html_path, "r", encoding="utf-8") as f:
         soup = BeautifulSoup(f, "html.parser")
 
     portal_overview = extract_portal_overview(soup)
+    # If overview extraction was empty, preserve previous overview
+    for k, v in existing_portal_overview.items():
+        if portal_overview.get(k) is None and v is not None:
+            portal_overview[k] = v
 
     table = soup.find("table", {"id": "dataTablePS"})
     if not table:
         table = soup.find("table")
 
-    problem_statements = []
+    newly_extracted_items = []
 
     if table:
         tbody = table.find("tbody")
@@ -203,7 +222,24 @@ def parse_html_to_json(html_path: Path = HTML_FILE, json_path: Path = OUTPUT_JSO
                 "contact_info": contact_info,
                 "all_modal_fields": modal_data
             }
-            problem_statements.append(item)
+            newly_extracted_items.append(item)
+
+    print(f"[INFO] Parsed {len(newly_extracted_items)} items from HTML.")
+
+    # Non-Destructive Merge:
+    # If newly extracted items are equal to or more than existing items, use new items.
+    # If fewer (e.g. only 10 extracted due to partial load), update matching ones and keep the rest!
+    for item in newly_extracted_items:
+        key = item.get("ps_number") or str(item.get("ps_id")) or item.get("title")
+        if key:
+            existing_items_map[key] = item
+
+    # Final combined list sorted by s_no or ps_number
+    combined_items = list(existing_items_map.values())
+    try:
+        combined_items.sort(key=lambda x: int(x.get("s_no") or re.sub(r"\D", "", str(x.get("ps_id", 0))) or 0))
+    except Exception:
+        pass
 
     # Compute Statistics
     category_counts = {}
@@ -212,7 +248,7 @@ def parse_html_to_json(html_path: Path = HTML_FILE, json_path: Path = OUTPUT_JSO
     dept_counts = {}
     total_submitted_ideas = 0
 
-    for ps in problem_statements:
+    for ps in combined_items:
         cat = ps["category"] or "Uncategorized"
         category_counts[cat] = category_counts.get(cat, 0) + 1
 
@@ -225,7 +261,7 @@ def parse_html_to_json(html_path: Path = HTML_FILE, json_path: Path = OUTPUT_JSO
         dept = ps["department"] or "Other"
         dept_counts[dept] = dept_counts.get(dept, 0) + 1
 
-        total_submitted_ideas += ps["submission_stats"]["current"]
+        total_submitted_ideas += ps.get("submission_stats", {}).get("current", 0)
 
     theme_distribution = [{"name": k, "count": v} for k, v in sorted(theme_counts.items(), key=lambda x: x[1], reverse=True)]
     org_distribution = [{"name": k, "count": v} for k, v in sorted(org_counts.items(), key=lambda x: x[1], reverse=True)]
@@ -235,29 +271,31 @@ def parse_html_to_json(html_path: Path = HTML_FILE, json_path: Path = OUTPUT_JSO
         "metadata": {
             "generated_at": datetime.now().isoformat(),
             "source_file": str(html_path),
-            "total_extracted": len(problem_statements)
+            "total_extracted": len(combined_items),
+            "newly_parsed_batch_size": len(newly_extracted_items)
         },
         "portal_overview": portal_overview,
         "statistics": {
-            "total_extracted": len(problem_statements),
+            "total_extracted": len(combined_items),
             "total_submitted_ideas": total_submitted_ideas,
             "categories": category_counts,
             "themes": theme_distribution,
             "organizations": org_distribution,
             "departments": dept_distribution
         },
-        "problem_statements": problem_statements
+        "problem_statements": combined_items
     }
 
     # Save to JSON
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(data_payload, f, indent=2, ensure_ascii=False)
 
-    print(f"[OK] Successfully extracted {len(problem_statements)} problem statements.")
+    print(f"[OK] Dataset contains {len(combined_items)} problem statements (Upsert complete).")
     print(f"[OK] Saved structured data to '{json_path.resolve()}'.")
 
-    # Sync embedded JSON into dashboard.html
-    update_dashboard_embedded_data(data_payload)
+    # Sync embedded JSON into dashboard.html and index.html
+    update_dashboard_embedded_data(data_payload, DASHBOARD_HTML_FILE)
+    update_dashboard_embedded_data(data_payload, INDEX_HTML_FILE)
 
     return data_payload
 
