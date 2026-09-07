@@ -1,15 +1,34 @@
 import asyncio
+import subprocess
 from pathlib import Path
 from datetime import datetime
 
 from playwright.async_api import async_playwright
-from parse_sih import parse_html_to_json
+from parse_sih import parse_html_to_json, update_dashboard_embedded_data
 
 
 URL = "https://sih.gov.in/sih2026PS"
 OUTPUT_FILE = Path("sih2026PS.html")
+INDEX_HTML = Path("index.html")
+DASHBOARD_HTML = Path("dashboard.html")
 INTERVAL_SECONDS = 10 * 60
 MINIMUM_EXPECTED_ROWS = 50
+
+
+def auto_git_push():
+    """Automatically commits and pushes new changes to GitHub/Vercel if running locally."""
+    try:
+        status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True)
+        if status.stdout.strip():
+            print("[GIT] Changes detected. Committing and pushing to GitHub...")
+            subprocess.run(["git", "add", "sih2026_data.json", "sih2026PS.html", "dashboard.html", "index.html"], check=True)
+            subprocess.run(["git", "commit", "-m", "chore(auto-update): sync SIH 2026 dataset [local sync]"], check=True)
+            subprocess.run(["git", "push"], check=True)
+            print("[GIT] Successfully pushed updates to GitHub & Vercel!")
+        else:
+            print("[GIT] No dataset changes to commit.")
+    except Exception as e:
+        print(f"[GIT-NOTE] Auto-push skipped: {e}")
 
 
 async def download_page(page):
@@ -39,7 +58,6 @@ async def download_page(page):
 
         await page.wait_for_selector("#dataTablePS", timeout=30000)
 
-        # Wait for jQuery and DataTable to be attached
         for _ in range(15):
             is_dt = await page.evaluate("""() => {
                 return Boolean(window.jQuery && 
@@ -51,7 +69,6 @@ async def download_page(page):
                 break
             await page.wait_for_timeout(1000)
 
-        # Expand DataTable with retries
         expanded_rows = 0
         for attempt in range(1, 6):
             print(f"[INFO] Expanding DataTable (attempt {attempt}/5)...")
@@ -95,8 +112,12 @@ async def download_page(page):
         print(f"[OK] Saved {len(html):,} characters with {expanded_rows} rows to {OUTPUT_FILE.resolve()}")
 
         try:
-            print("[INFO] Parsing HTML into JSON and syncing dashboard...")
-            parse_html_to_json()
+            print("[INFO] Parsing HTML into JSON and syncing dashboards...")
+            data = parse_html_to_json()
+            update_dashboard_embedded_data(data, DASHBOARD_HTML)
+            update_dashboard_embedded_data(data, INDEX_HTML)
+            # Auto-sync to GitHub/Vercel
+            auto_git_push()
         except Exception as pe:
             print(f"[WARN] Error during auto-parsing: {pe}")
 
@@ -118,12 +139,19 @@ async def main():
     print()
 
     async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
+        browser = await p.chromium.launch(
+            headless=True,
+            args=[
+                "--disable-blink-features=AutomationControlled",
+                "--no-sandbox",
+                "--disable-setuid-sandbox"
+            ]
+        )
         context = await browser.new_context(
             locale="en-IN",
             timezone_id="Asia/Kolkata",
             viewport={"width": 1440, "height": 900},
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
         )
         page = await context.new_page()
 
@@ -131,11 +159,11 @@ async def main():
             while True:
                 success = await download_page(page)
                 if success:
-                    print("[INFO] Database & HTML synchronization successful.")
+                    print("[INFO] Synchronization cycle completed.")
                 else:
-                    print("[INFO] Keeping previous database version.")
+                    print("[INFO] Preserving existing database.")
 
-                print("[INFO] Waiting 10 minutes before the next check...")
+                print("[INFO] Waiting 10 minutes before next check...")
                 await asyncio.sleep(INTERVAL_SECONDS)
 
         except KeyboardInterrupt:
